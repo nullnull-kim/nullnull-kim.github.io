@@ -51,8 +51,8 @@ author:
 menu:
   - title:             Daily
     url:               /daily/
-  #- title:             Study
-  #  url:               /study/
+  - title:             Study
+    url:               /study/
   - title:             About
     url:               /about/
 
