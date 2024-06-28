@@ -2,6 +2,8 @@
 [Grind75](https://www.techinterviewhandbook.org/grind75){: target="_blank"}  
 [문제로](https://leetcode.com/problems/two-sum/description/){: target="_blank"}
 
+0초로 푼 이들의 답이 궁금하다
+
 ## 풀이1
 ```java
 class Solution {
@@ -46,3 +48,21 @@ class Solution {
 }
 ```
 ![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/f63881ac-9ecd-4cb0-8a69-404cbef3a22b)
+
+## 풀이3
+```java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> numMap = new HashMap<>();
+
+        for(int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if(numMap.containsKey(complement)) return new int[] {numMap.get(complement), i};
+            else numMap.put(nums[i], i);
+        }
+
+        return new int[]{};
+    }
+}
+```
+![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/3c68bd30-50e8-43d9-8f05-036d56ca4e2a)
