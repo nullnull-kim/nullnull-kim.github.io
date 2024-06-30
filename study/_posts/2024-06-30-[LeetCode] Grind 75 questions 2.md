@@ -1,4 +1,4 @@
-# [LeetCode] Grind 75 questions (1/75)
+# [LeetCode] Grind 75 questions (2/75)
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
 <a href="https://leetcode.com/problems/valid-parentheses/description/" target="_blank">문제로</a>
 
