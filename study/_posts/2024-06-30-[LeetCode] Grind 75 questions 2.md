@@ -27,3 +27,14 @@ class Solution {
 ```
 
 ![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/1d4a93d4-1744-47db-bbbe-22cf45243343)
+
+### 참고
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html" target="_blank">document</a>
+
+```java
+public E push(E item)
+public E pop()
+public E peek()
+public boolean empty()
+public int search(Object o) 
+```
