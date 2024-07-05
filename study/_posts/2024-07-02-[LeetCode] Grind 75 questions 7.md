@@ -17,3 +17,31 @@ class Solution {
 }
 ```
 ![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/cd300794-d17f-4c73-948e-101bfbebf2ed)
+
+## 풀이2
+```java
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+
+        Map<Character, Integer> count = new HashMap<>();
+
+        for(char c : s.toCharArray()) {
+            count.put(c, count.getOrDefault(c, 0) + 1);
+        }
+
+        for(char c : t.toCharArray()) {
+            count.put(c, count.getOrDefault(c, 0) -1);
+        }
+
+        for(int n : count.values()) {
+            if(n != 0) return false;
+        }
+
+        return true;
+    }
+}
+```
+![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/6afdf503-ccb3-4585-b933-e6f22d16b63f)
