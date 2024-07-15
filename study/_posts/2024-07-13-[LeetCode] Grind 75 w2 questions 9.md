@@ -1,4 +1,4 @@
-# [LeetCode] Grind 75 questions (22/75)
+# [LeetCode] Grind 75 questions (22/75) Middle of the Linked List
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
 <a href="https://leetcode.com/problems/middle-of-the-linked-list" target="_blank">문제로</a>
 

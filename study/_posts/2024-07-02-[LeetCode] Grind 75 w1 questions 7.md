@@ -1,4 +1,4 @@
-# [LeetCode] Grind 75 questions (7/75)
+# [LeetCode] Grind 75 questions (7/75) Valid Anagram
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
 <a href="https://leetcode.com/problems/valid-anagram/" target="_blank">문제로</a>
 

@@ -1,4 +1,4 @@
-# [LeetCode] Grind 75 questions (14/75)
+# [LeetCode] Grind 75 questions (14/75) First Bad Version
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
 <a href="https://leetcode.com/problems/first-bad-version/" target="_blank">문제로</a>
 

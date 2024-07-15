@@ -1,4 +1,4 @@
-# [LeetCode] Grind 75 questions (1/75)
+# [LeetCode] Grind 75 questions (1/75) Two Sum
 [Grind75](https://www.techinterviewhandbook.org/grind75){: target="_blank"}  
 [문제로](https://leetcode.com/problems/two-sum/description/){: target="_blank"}
 

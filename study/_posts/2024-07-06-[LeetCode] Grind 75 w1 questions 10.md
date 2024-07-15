@@ -1,4 +1,4 @@
-# [LeetCode] Grind 75 questions (10/75)
+# [LeetCode] Grind 75 questions (10/75) Lowest Common Ancestor of a Binary Search Tree
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
 <a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/" target="_blank">문제로</a>
 

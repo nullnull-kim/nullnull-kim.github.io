@@ -1,4 +1,4 @@
-# [LeetCode] Grind 75 questions (13/75)
+# [LeetCode] Grind 75 questions (13/75) Implement Queue using Stacks
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
 <a href="https://leetcode.com/problems/implement-queue-using-stacks/description/" target="_blank">문제로</a>
 

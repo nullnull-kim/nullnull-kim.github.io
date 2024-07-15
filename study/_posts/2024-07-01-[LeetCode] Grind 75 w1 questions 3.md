@@ -1,4 +1,4 @@
-# [LeetCode] Grind 75 questions (3/75)
+# [LeetCode] Grind 75 questions (3/75) Merge Two Sorted Lists
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
 <a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank">문제로</a>
 
