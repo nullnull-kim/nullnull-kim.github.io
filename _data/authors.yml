@@ -2,13 +2,13 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              김널널
+  name:              김태영
   email:             nullnull.kim@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    널널해지고 싶은 사람
+    필사적으로 행복해지자
 
   # This photo will be used in the about section
   picture:
