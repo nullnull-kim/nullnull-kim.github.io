@@ -1,4 +1,4 @@
-# [LeetCode] Grind 75 questions (24/75) Insert Interval
+# [LeetCode] Grind 75 questions (26/75) Insert Interval
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
 <a href="https://leetcode.com/problems/insert-interval/" target="_blank">문제로</a>
 
