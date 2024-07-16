@@ -24,7 +24,7 @@ public int[][] updateMatrix(int[][] mat) {
         }
         
         // BFS를 위한 방향 배열
-        int[][] directions = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+        int[][] directions = { {0, 1}, {1, 0}, {0, -1}, {-1, 0} };
         
         // BFS 탐색
         while (!queue.isEmpty()) {
