@@ -1,6 +1,6 @@
-# [LeetCode] Grind 75 questions (27/75)
+# [LeetCode] Grind 75 questions (27/75) 01 Matrix
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
-<a href="https://leetcode.com/problems/insert-interval/" target="_blank">문제로</a>
+<a href="https://leetcode.com/problems/01-matrix/description/" target="_blank">문제로</a>
 
 ## 풀이2
 ```java
