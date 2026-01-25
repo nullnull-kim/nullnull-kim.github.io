@@ -1,4 +1,4 @@
-name: Deploy Jekyll site to GitHub Pages
+name: Build & Deploy Hydejack Jekyll to GitHub Pages
 
 on:
   push:
@@ -17,20 +17,34 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          source: ./
-          destination: ./_site
+          # Jekyll 4.1 + Hydejack 9.x 조합은 Ruby 3.1/3.2에서 주로 사용됩니다.
+          # (2.7/3.0은 gem 호환 이슈가 더 잦습니다)
+          ruby-version: "3.1"
+          bundler-cache: true
 
-      - name: Upload artifact
+      # kramdown-math-katex / duktape 때문에 Node가 필요한 경우가 많아서 같이 설치
+      - name: Setup Node (for katex build)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install gems
+        run: bundle install
+
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build -d _site
+
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
@@ -40,6 +54,7 @@ jobs:
     needs: build
     environment:
       name: github-pages
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
