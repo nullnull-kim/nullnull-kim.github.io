@@ -5,7 +5,8 @@ theme = "PaperMod"
 enableGitInfo = true
 enableRobotsTXT = true
 hasCJKLanguage = true
-paginate = 10
+[pagination]
+  pagerSize = 10
 
 [params]
   author = "김태영"
