@@ -9,6 +9,8 @@ paginate = 10
 
 [params]
   author = "김태영"
+  [params.assets]
+    disableFingerprinting = true
   description = "필사적으로 행복해지자"
   defaultTheme = "auto"
   ShowReadingTime = true
