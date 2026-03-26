@@ -1,142 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Daily on 김태영</title>
-    <link>http://localhost:1313/categories/daily/</link>
-    <description>Recent content in Daily on 김태영</description>
-    <generator>Hugo</generator>
-    <language>ko</language>
-    <lastBuildDate>Thu, 26 Mar 2026 20:36:01 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/daily/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>월급쟁이</title>
-      <link>http://localhost:1313/daily/2024-07-06-%EC%9B%94%EA%B8%89%EC%9F%81%EC%9D%B4/</link>
-      <pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/daily/2024-07-06-%EC%9B%94%EA%B8%89%EC%9F%81%EC%9D%B4/</guid>
-      <description>&lt;hr&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Daily on 김태영</title><link>https://nullnull-kim.nullnull-kim-fad.workers.dev/categories/daily/</link><description>Recent content in Daily on 김태영</description><generator>Hugo</generator><language>ko</language><lastBuildDate>Thu, 26 Mar 2026 20:36:01 +0900</lastBuildDate><atom:link href="https://nullnull-kim.nullnull-kim-fad.workers.dev/categories/daily/index.xml" rel="self" type="application/rss+xml"/><item><title>월급쟁이</title><link>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-07-06-%EC%9B%94%EA%B8%89%EC%9F%81%EC%9D%B4/</link><pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate><guid>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-07-06-%EC%9B%94%EA%B8%89%EC%9F%81%EC%9D%B4/</guid><description>&lt;hr&gt;
 &lt;p&gt;layout: post
 title: 월급쟁이
 #image:&lt;/p&gt;
-&lt;h1 id=&#34;path-assetsimgblogjeremy-bishop05xjpg&#34;&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
+&lt;h1 id="path-assetsimgblogjeremy-bishop05xjpg"&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
 &lt;p&gt;description: &amp;gt;&lt;/p&gt;
-&lt;h2 id=&#34;sitemap-false&#34;&gt;sitemap: false&lt;/h2&gt;
+&lt;h2 id="sitemap-false"&gt;sitemap: false&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;같은 월급쟁이들끼리&amp;hellip; 사정 아시잖아요&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;br&gt;
 &lt;p&gt;최근 우리팀에게 프로젝트 제안을 보내는 현업팀에서 자주 하는 멘트다.&lt;br&gt;
-6월 중순까지도 협의되지 않은 요건이었지만 &amp;lsquo;가능하다면&amp;rsquo; 7월 초 테스트 오픈이었다.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Grind 75 questions</title>
-      <link>http://localhost:1313/daily/2024-06-29-grind-75-questions/</link>
-      <pubDate>Sat, 29 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/daily/2024-06-29-grind-75-questions/</guid>
-      <description>&lt;hr&gt;
+6월 중순까지도 협의되지 않은 요건이었지만 &amp;lsquo;가능하다면&amp;rsquo; 7월 초 테스트 오픈이었다.&lt;/p&gt;</description></item><item><title>Grind 75 questions</title><link>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-06-29-grind-75-questions/</link><pubDate>Sat, 29 Jun 2024 00:00:00 +0000</pubDate><guid>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-06-29-grind-75-questions/</guid><description>&lt;hr&gt;
 &lt;p&gt;layout: post
 title: Grind 75 questions
 #image:&lt;/p&gt;
-&lt;h1 id=&#34;path-assetsimgblogjeremy-bishop05xjpg&#34;&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
+&lt;h1 id="path-assetsimgblogjeremy-bishop05xjpg"&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
 &lt;p&gt;description: &amp;gt;&lt;/p&gt;
-&lt;h2 id=&#34;sitemap-false&#34;&gt;sitemap: false&lt;/h2&gt;
+&lt;h2 id="sitemap-false"&gt;sitemap: false&lt;/h2&gt;
 &lt;p&gt;leetcode를 매일 1문제씩 푸는게 객단가가 안나온다 느껴져서 조언을 구했다.&lt;br&gt;
 최빈출 75제 먼저 정복하고 빈도수별로 풀어나가라고 답변을 얻었다.
-끝.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>친절한 SQL 튜닝</title>
-      <link>http://localhost:1313/daily/2024-06-26-%EC%B9%9C%EC%A0%88%ED%95%9C-sql-%ED%8A%9C%EB%8B%9D/</link>
-      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/daily/2024-06-26-%EC%B9%9C%EC%A0%88%ED%95%9C-sql-%ED%8A%9C%EB%8B%9D/</guid>
-      <description>&lt;hr&gt;
+끝.&lt;/p&gt;</description></item><item><title>친절한 SQL 튜닝</title><link>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-06-26-%EC%B9%9C%EC%A0%88%ED%95%9C-sql-%ED%8A%9C%EB%8B%9D/</link><pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate><guid>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-06-26-%EC%B9%9C%EC%A0%88%ED%95%9C-sql-%ED%8A%9C%EB%8B%9D/</guid><description>&lt;hr&gt;
 &lt;p&gt;layout: post
 title: 친절한 SQL 튜닝
 #image:&lt;/p&gt;
-&lt;h1 id=&#34;path-assetsimgblogjeremy-bishop05xjpg&#34;&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
+&lt;h1 id="path-assetsimgblogjeremy-bishop05xjpg"&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
 &lt;p&gt;description: &amp;gt;&lt;/p&gt;
-&lt;h2 id=&#34;sitemap-false&#34;&gt;sitemap: false&lt;/h2&gt;
+&lt;h2 id="sitemap-false"&gt;sitemap: false&lt;/h2&gt;
 &lt;p&gt;1회독을 마칠때쯤 팀에서 신규 프로젝트의 데이터를 어떤 테이블에 적재할지 논의하는 시간이 생겼다.&lt;/p&gt;
-&lt;p&gt;&amp;lsquo;A 테이블 인덱스 문제로 B테이블에 거래내역을 적재해야 합니다.&amp;rsquo;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>추모</title>
-      <link>http://localhost:1313/daily/2024-06-19-%EC%B6%94%EB%AA%A8/</link>
-      <pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/daily/2024-06-19-%EC%B6%94%EB%AA%A8/</guid>
-      <description>&lt;hr&gt;
+&lt;p&gt;&amp;lsquo;A 테이블 인덱스 문제로 B테이블에 거래내역을 적재해야 합니다.&amp;rsquo;&lt;/p&gt;</description></item><item><title>추모</title><link>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-06-19-%EC%B6%94%EB%AA%A8/</link><pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate><guid>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-06-19-%EC%B6%94%EB%AA%A8/</guid><description>&lt;hr&gt;
 &lt;p&gt;layout: post
 title: 추모
 #image:&lt;/p&gt;
-&lt;h1 id=&#34;path-assetsimgblogjeremy-bishop05xjpg&#34;&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
+&lt;h1 id="path-assetsimgblogjeremy-bishop05xjpg"&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
 &lt;p&gt;description: &amp;gt;&lt;/p&gt;
-&lt;h2 id=&#34;sitemap-false&#34;&gt;sitemap: false&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/b4878f8b-1578-4d8a-b651-145b9e7f30af&#34;&gt;&lt;/p&gt;
+&lt;h2 id="sitemap-false"&gt;sitemap: false&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="image" loading="lazy" src="https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/b4878f8b-1578-4d8a-b651-145b9e7f30af"&gt;&lt;/p&gt;
 &lt;p&gt;직접 분향소에 찾아가지 못해 미안합니다.&lt;br&gt;
-삼가 고인의 명복을 빕니다.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>알리바바</title>
-      <link>http://localhost:1313/daily/2024-06-18-%EC%95%8C%EB%A6%AC%EB%B0%94%EB%B0%94/</link>
-      <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/daily/2024-06-18-%EC%95%8C%EB%A6%AC%EB%B0%94%EB%B0%94/</guid>
-      <description>&lt;hr&gt;
+삼가 고인의 명복을 빕니다.&lt;/p&gt;</description></item><item><title>알리바바</title><link>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-06-18-%EC%95%8C%EB%A6%AC%EB%B0%94%EB%B0%94/</link><pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate><guid>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-06-18-%EC%95%8C%EB%A6%AC%EB%B0%94%EB%B0%94/</guid><description>&lt;hr&gt;
 &lt;p&gt;layout: post
 title: 알리바바
 #image:&lt;/p&gt;
-&lt;h1 id=&#34;path-assetsimgblogjeremy-bishop05xjpg&#34;&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
+&lt;h1 id="path-assetsimgblogjeremy-bishop05xjpg"&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
 &lt;p&gt;description: &amp;gt;&lt;/p&gt;
-&lt;h2 id=&#34;sitemap-false&#34;&gt;sitemap: false&lt;/h2&gt;
+&lt;h2 id="sitemap-false"&gt;sitemap: false&lt;/h2&gt;
 &lt;p&gt;5월말경 알리바바가 전 축구선수 David Beckham과 전속 계약을 맺었다고 한다.
-&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/d74f2e7b-fd5f-46c0-a401-adc29048c1cd&#34;&gt;&lt;/p&gt;
+&lt;img alt="image" loading="lazy" src="https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/d74f2e7b-fd5f-46c0-a401-adc29048c1cd"&gt;&lt;/p&gt;
 &lt;p&gt;전 세계적으로 아마존같은 포지션을 원하는지 공격적인 마케팅을 하는 것 같다.&lt;br&gt;
-덕분에 16인치 모니터를 값싸게 샀다.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>자격증</title>
-      <link>http://localhost:1313/daily/2024-06-15-%EC%9E%90%EA%B2%A9%EC%A6%9D/</link>
-      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/daily/2024-06-15-%EC%9E%90%EA%B2%A9%EC%A6%9D/</guid>
-      <description>&lt;hr&gt;
+덕분에 16인치 모니터를 값싸게 샀다.&lt;/p&gt;</description></item><item><title>자격증</title><link>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-06-15-%EC%9E%90%EA%B2%A9%EC%A6%9D/</link><pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate><guid>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-06-15-%EC%9E%90%EA%B2%A9%EC%A6%9D/</guid><description>&lt;hr&gt;
 &lt;p&gt;layout: post
 title: 자격증
 #image:&lt;/p&gt;
-&lt;h1 id=&#34;path-assetsimgblogjeremy-bishop05xjpg&#34;&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
+&lt;h1 id="path-assetsimgblogjeremy-bishop05xjpg"&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
 &lt;p&gt;description: &amp;gt;&lt;/p&gt;
-&lt;h2 id=&#34;sitemap-false&#34;&gt;sitemap: false&lt;/h2&gt;
+&lt;h2 id="sitemap-false"&gt;sitemap: false&lt;/h2&gt;
 &lt;p&gt;sqld 시험에 응시했다.&lt;br&gt;
 시간이라는 한정된 자원을 최대한 활용하기 위해 목표가 필요했다.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/9c7bceb5-1c3e-4a2d-a2e2-d47590cbc4e6&#34;&gt;&lt;/p&gt;
-&lt;p&gt;자격증이 내 삶을 대단케하지는 않지만 목표를 이뤄나가는 과정이 단단한 뿌리가 되리라 믿는다.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>객단가</title>
-      <link>http://localhost:1313/daily/2024-06-01-%EA%B0%9D%EB%8B%A8%EA%B0%80/</link>
-      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/daily/2024-06-01-%EA%B0%9D%EB%8B%A8%EA%B0%80/</guid>
-      <description>&lt;hr&gt;
+&lt;p&gt;&lt;img alt="image" loading="lazy" src="https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/9c7bceb5-1c3e-4a2d-a2e2-d47590cbc4e6"&gt;&lt;/p&gt;
+&lt;p&gt;자격증이 내 삶을 대단케하지는 않지만 목표를 이뤄나가는 과정이 단단한 뿌리가 되리라 믿는다.&lt;/p&gt;</description></item><item><title>객단가</title><link>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-06-01-%EA%B0%9D%EB%8B%A8%EA%B0%80/</link><pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate><guid>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-06-01-%EA%B0%9D%EB%8B%A8%EA%B0%80/</guid><description>&lt;hr&gt;
 &lt;p&gt;layout: post
 title: 객단가
 #image:&lt;/p&gt;
-&lt;h1 id=&#34;path-assetsimgblogjeremy-bishop05xjpg&#34;&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
+&lt;h1 id="path-assetsimgblogjeremy-bishop05xjpg"&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
 &lt;p&gt;description: &amp;gt;&lt;/p&gt;
-&lt;h2 id=&#34;sitemap-false&#34;&gt;sitemap: false&lt;/h2&gt;
+&lt;h2 id="sitemap-false"&gt;sitemap: false&lt;/h2&gt;
 &lt;p&gt;미용실 유목민은 머리카락를 자르는 주기가 올 때마다 곤혹스럽지 않을 수 없다.&lt;br&gt;
 장인어른은 이발과 염색까지 이만원에 해주는 맛집(?) 있고&lt;br&gt;
-동서(사실 형님으로 모시고 있다)는 남양주에서 잠실까지 원정을 떠난다고 한다.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>블로그 개시</title>
-      <link>http://localhost:1313/daily/2024-05-29-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EC%8B%9C/</link>
-      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/daily/2024-05-29-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EC%8B%9C/</guid>
-      <description>&lt;hr&gt;
+동서(사실 형님으로 모시고 있다)는 남양주에서 잠실까지 원정을 떠난다고 한다.&lt;/p&gt;</description></item><item><title>블로그 개시</title><link>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-05-29-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EC%8B%9C/</link><pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate><guid>https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/2024-05-29-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EC%8B%9C/</guid><description>&lt;hr&gt;
 &lt;p&gt;layout: post
 title: 블로그 개시
 #image:&lt;/p&gt;
-&lt;h1 id=&#34;path-assetsimgblogjeremy-bishop05xjpg&#34;&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
+&lt;h1 id="path-assetsimgblogjeremy-bishop05xjpg"&gt;path: /assets/img/blog/jeremy-bishop@0,5x.jpg&lt;/h1&gt;
 &lt;p&gt;description: &amp;gt;&lt;/p&gt;
-&lt;h2 id=&#34;sitemap-false&#34;&gt;sitemap: false&lt;/h2&gt;
-&lt;p&gt;깃허브 블로그로 흔적 기록하기 시작&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;h2 id="sitemap-false"&gt;sitemap: false&lt;/h2&gt;
+&lt;p&gt;깃허브 블로그로 흔적 기록하기 시작&lt;/p&gt;</description></item></channel></rss>
