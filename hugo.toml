@@ -1,0 +1,75 @@
+baseURL = "https://nullnull-kim.pages.dev/"
+languageCode = "ko"
+title = "김태영"
+theme = "PaperMod"
+enableGitInfo = true
+enableRobotsTXT = true
+hasCJKLanguage = true
+paginate = 10
+
+[params]
+  author = "김태영"
+  description = "필사적으로 행복해지자"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  ShowRssButtonInSectionTermList = true
+  ShowFullTextinRSS = false
+  math = true
+
+  [params.homeInfoParams]
+    Title = "김태영"
+    Content = "필사적으로 행복해지자"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/nullnull-kim"
+
+[menu]
+  [[menu.main]]
+    name = "Daily"
+    url = "/daily/"
+    weight = 10
+  [[menu.main]]
+    name = "Study"
+    url = "/study/"
+    weight = 20
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 30
+  [[menu.main]]
+    name = "Archive"
+    url = "/archives/"
+    weight = 40
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[permalinks]
+  daily = "/daily/:year-:month-:day-:slug/"
+  study = "/study/:year-:month-:day-:slug/"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    lineNos = true
+    codeFences = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [["$$", "$$"]]
+          inline = [["$", "$"]]
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

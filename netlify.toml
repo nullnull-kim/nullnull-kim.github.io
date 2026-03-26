@@ -1,7 +1,7 @@
 [build]
- command = "jekyll build"
- publish = "_site"
+  command = "hugo --minify"
+  publish = "public"
 
-[build.environment]
-  JEKYLL_ENV = "production"
-  RUBY_VERSION = "2.7.1"
+  [build.environment]
+    HUGO_VERSION = "0.159.0"
+    HUGO_ENV = "production"
