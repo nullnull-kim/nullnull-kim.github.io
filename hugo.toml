@@ -35,29 +35,23 @@ hasCJKLanguage = true
 
 [menu]
   [[menu.main]]
-    name = "Daily"
-    url = "/daily/"
+    name = "Logs"
+    url = "/logs/"
     weight = 10
-  [[menu.main]]
-    name = "Study"
-    url = "/study/"
-    weight = 20
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 30
+    weight = 20
   [[menu.main]]
     name = "Archive"
     url = "/archives/"
-    weight = 40
+    weight = 30
 
 [taxonomies]
-  category = "categories"
   tag = "tags"
 
 [permalinks]
-  daily = "/daily/:year-:month-:day-:slug/"
-  study = "/study/:year-:month-:day-:slug/"
+  logs = "/logs/:year-:month-:day-:slug/"
 
 [markup]
   [markup.highlight]
