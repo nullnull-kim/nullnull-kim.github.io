@@ -2,7 +2,7 @@ name = "nullnull-kim"
 compatibility_date = "2025-07-31"
 
 [build]
-command = "hugo --minify --baseURL https://nullnull-kim.nullnull-kim-fad.workers.dev/"
+command = "hugo --minify"
 
 [assets]
 directory = "./public"
