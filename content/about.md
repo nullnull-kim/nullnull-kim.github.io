@@ -5,39 +5,11 @@ url: "/about/"
 summary: "about"
 ---
 
+김태영. 운 좋게 금융권 SM으로 들어가서 굴지의 국내 기업들을 담당하는 펌뱅킹 담당자. 최근 바이브코딩을 시작했다가 토큰과의 전쟁에 빠졌다.
 
-# About
+이 블로그에는 시행착오, 일상, 가끔 LeetCode 풀이를 기록한다.
 
-<!--author-->
-
-[blog]: /
-[portfolio]: https://hydejack.com/examples/
-[resume]: https://hydejack.com/resume/
-[download]: https://hydejack.com/download/
-[welcome]: https://hydejack.com/
-[forms]: https://hydejack.com/forms-by-example/
-
-[features]: #features
-[news]: #build-an-audience
-[syntax]: syntax-highlighting
-[latex]: #beautiful-math
-[dark]: https://hydejack.com/blog/hydejack/2018-09-01-introducing-dark-mode/
-[search]: https://hydejack.com/#_search-input
-[grid]: https://hydejack.com/blog/hydejack/
-
-[lic]: LICENSE.md
-[pro]: licenses/PRO.md
-[docs]: docs/README.md
-[ofln]: docs/advanced.md#enabling-offline-support
-[math]: docs/writing.md#adding-math
-
-[kit]: https://github.com/hydecorp/hydejack-starter-kit/releases
-[src]: https://github.com/hydecorp/hydejack
-[gem]: https://rubygems.org/gems/jekyll-theme-hydejack
-[buy]: https://gum.co/nuOluY
-
-[gpss]: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fhydejack.com%2Fdocs%2F
-[rouge]: http://rouge.jneen.net
-[katex]: https://khan.github.io/KaTeX/
-[mathjax]: https://www.mathjax.org/
-[tinyletter]: https://tinyletter.com/
+- GitHub: [nullnull-kim](https://github.com/nullnull-kim)
+- Blog: [nullnull-kim.github.io](https://github.com/nullnull-kim/nullnull-kim.github.io)
+- 블로그 엔진: Hugo + PaperMod
+- 배포: Cloudflare
