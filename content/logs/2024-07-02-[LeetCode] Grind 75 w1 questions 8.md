@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (8/75) Binary Search"
 date: 2024-07-02
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -29,4 +30,4 @@ class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/cdeb169a-cb49-487b-b962-2dc8c360ccc7)
+![image](/img/blog/2024-07-02-grind75-binary-search-01.png)

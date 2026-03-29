@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (26/75) Insert Interval"
 date: 2024-07-15
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -41,7 +42,7 @@ class Solution {
 
 ```
 
-![image](https://github.com/user-attachments/assets/cf0cd391-896f-4540-b4f9-46711e3562e9)
+![image](/img/blog/2024-07-15-grind75-insert-interval-01.png)
 
 ### 풀이방법
 

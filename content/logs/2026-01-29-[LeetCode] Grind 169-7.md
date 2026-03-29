@@ -2,6 +2,7 @@
 title: "[LeetCode Grind 169] Week1 - 7. Valid Anagram"
 date: 2026-01-29
 categories: [logs]
+series: Grind 169
 ---
 
 <a href="https://leetcode.com/problems/valid-anagram/" target="_blank">문제로</a>

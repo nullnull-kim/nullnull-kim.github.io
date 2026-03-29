@@ -143,3 +143,7 @@ session结束时Stop hook删除心跳文件。防止已结束的项目出现"等
 > 48\. Claude完成时播放声音 — 用Stop Hook播放系统音效。启动任务后切换到其他工作，完成时用提示音通知。
 
 如果只在本地工作，这样似乎就够了。
+
+**相关文章**
+- [[Claude]（为了省Token做过的事）EP.1 — 三小时就超额的故事](/logs/2026-03-27-token-ep1/)
+- [[Claude]（为了省Token做过的事）EP.2 — 必须守护my precious](/logs/2026-03-28-token-ep2/)

@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (7/75) Valid Anagram"
 date: 2024-07-02
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -21,7 +22,7 @@ class Solution {
     }
 }
 ```
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/cd300794-d17f-4c73-948e-101bfbebf2ed)
+![image](/img/blog/2024-07-02-grind75-valid-anagram-01.png)
 
 ## 풀이2
 ```java
@@ -49,4 +50,4 @@ class Solution {
     }
 }
 ```
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/6afdf503-ccb3-4585-b933-e6f22d16b63f)
+![image](/img/blog/2024-07-02-grind75-valid-anagram-02.png)

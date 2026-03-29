@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (13/75) Implement Queue using Stacks"
 date: 2024-07-08
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -55,7 +56,7 @@ class MyQueue {
  */
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/d36dbd67-71e8-4c4e-9ae7-41800ad9d0ad)
+![LeetCode Implement Queue using Stacks 풀이 제출 결과](/img/blog/2024-07-08-grind75-implement-queue-using-stacks-01.png)
 
 ### 참고
 #### 초기화

@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (5/75) Valid Palindrome"
 date: 2024-07-01
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -19,7 +20,7 @@ class Solution {
     }
 }
 ```
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/5624855a-ed8d-4963-b68d-b4846762a009)
+![image](/img/blog/2024-07-01-grind75-valid-palindrome-01.png)
 
 
 ## 풀이 2
@@ -40,4 +41,4 @@ class Solution {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/47ccc69c-b76e-4d93-a83f-83b04536bb71)
+![image](/img/blog/2024-07-01-grind75-valid-palindrome-02.png)

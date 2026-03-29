@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (25/75) Maximum Subarray"
 date: 2024-07-14
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -24,7 +25,7 @@ class Solution {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/286b5147-4d45-43db-ba75-8bf8f05d31fe)
+![LeetCode Maximum Subarray 풀이 제출 결과](/img/blog/2024-07-14-grind75-maximum-subarray-01.png)
 
 ### 참고
 Kadane's Algorithm은 배열에서 연속된 서브어레이(subarray)의 최대 합을 찾기 위한 효율적인 알고리즘입니다.  

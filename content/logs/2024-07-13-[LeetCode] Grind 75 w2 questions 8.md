@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (21/75) Diameter of Binary Tree"
 date: 2024-07-13
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -50,4 +51,4 @@ class Solution {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/3de81a08-078b-4347-a97f-90f3637f42aa)
+![image](/img/blog/2024-07-13-grind75-diameter-of-binary-tree-01.png)

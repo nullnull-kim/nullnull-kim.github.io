@@ -28,16 +28,16 @@ defaultContentLanguageInSubdir = false
     languageName = "日本語"
     languageCode = "ja"
     weight = 3
-    title = "キム・テヨン"
+    title = "スズキ・タイエイ"
     [languages.ja.params]
-      description = "開発者キム・テヨンの技術ブログ — Claude活用記、LeetCode解法、日常記録"
+      description = "開発者スズキ・タイエイの技術ブログ — Claude活用記、LeetCode解法、日常記録"
   [languages.zh]
     languageName = "中文"
     languageCode = "zh"
     weight = 4
-    title = "金泰英"
+    title = "金太永"
     [languages.zh.params]
-      description = "开发者金泰英的技术博客 — Claude使用技巧、LeetCode题解、日常记录"
+      description = "开发者金太永的技术博客 — Claude使用技巧、LeetCode题解、日常记录"
   [languages.es]
     languageName = "Español"
     languageCode = "es"

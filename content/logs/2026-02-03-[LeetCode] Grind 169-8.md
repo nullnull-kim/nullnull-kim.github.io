@@ -2,6 +2,7 @@
 title: "[LeetCode Grind 169] Week1 - 8. Binary Search"
 date: 2026-02-03
 categories: [logs]
+series: Grind 169
 ---
 
 <a href="https://leetcode.com/problems/valid-anagram/" target="_blank">문제로</a>

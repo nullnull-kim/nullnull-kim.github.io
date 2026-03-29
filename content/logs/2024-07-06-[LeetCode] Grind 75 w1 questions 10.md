@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (10/75) Lowest Common Ancestor of a Binary Search Tree"
 date: 2024-07-06
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -35,4 +36,4 @@ class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/98c7aba5-c363-4f2b-aedd-e655b32904b7)
+![LeetCode Lowest Common Ancestor of a BST 풀이 제출 결과](/img/blog/2024-07-06-grind75-lowest-common-ancestor-bst-01.png)

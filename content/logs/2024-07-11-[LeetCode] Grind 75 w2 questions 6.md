@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (19/75) Majority Element"
 date: 2024-07-11
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -33,4 +34,4 @@ class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/440213e0-8c1e-477e-97c4-3a82836f0f49)
+![image](/img/blog/2024-07-11-grind75-majority-element-01.png)

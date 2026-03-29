@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (24/75) Contains Duplicate"
 date: 2024-07-13
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -23,7 +24,7 @@ class Solution {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/ca910427-00c8-463b-bd31-c8658ec792ec)
+![LeetCode Contains Duplicate HashMap 풀이 제출 결과](/img/blog/2024-07-13-grind75-contains-duplicate-01.png)
 
 ### 풀이2
 ```java
@@ -41,4 +42,4 @@ class Solution {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/d7fb83cd-a2e2-4a5e-aa75-14e06165cc5a)
+![LeetCode Contains Duplicate HashSet 풀이 제출 결과](/img/blog/2024-07-13-grind75-contains-duplicate-02.png)

@@ -143,3 +143,7 @@ Hay un post llamado [50 Tips prácticos para Claude Code](https://news.hada.io/t
 > 48\. Reproducir sonido cuando Claude termina — Registrar un sonido del sistema via Stop Hook. Iniciar una tarea, cambiar a otro trabajo, recibir un ping cuando termina.
 
 Si solo trabajas en local, eso parece suficiente.
+
+**Posts relacionados**
+- [[Claude] (Lo que hice para ahorrar tokens) EP.1 — Agoté el límite en tres horas](/logs/2026-03-27-token-ep1/)
+- [[Claude] (Lo que hice para ahorrar tokens) EP.2 — Hay que proteger my precious](/logs/2026-03-28-token-ep2/)

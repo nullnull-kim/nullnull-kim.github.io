@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (20/75) Add Binary"
 date: 2024-07-12
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -35,4 +36,4 @@ class Solution {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/1be835cb-7603-4adc-981c-5835648311b6)
+![image](/img/blog/2024-07-12-grind75-add-binary-01.png)

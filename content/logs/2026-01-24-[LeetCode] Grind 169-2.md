@@ -2,6 +2,7 @@
 title: "[LeetCode Grind 169] Week1 - 2. Valid Parentheses"
 date: 2026-01-24
 categories: [logs]
+series: Grind 169
 ---
 
 <a href="https://leetcode.com/problems/valid-parentheses/" target="_blank">문제로</a>

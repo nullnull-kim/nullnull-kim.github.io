@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (2/75) Valid Parentheses"
 date: 2024-06-30
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -31,7 +32,7 @@ class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/1d4a93d4-1744-47db-bbbe-22cf45243343)
+![image](/img/blog/2024-06-30-grind75-valid-parentheses-01.png)
 
 ### 참고
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html" target="_blank">document</a>

@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (14/75) First Bad Version"
 date: 2024-07-10
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -28,4 +29,4 @@ public class Solution extends VersionControl {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/c561d5e3-f1b4-43d5-a223-641076149b92)
+![image](/img/blog/2024-07-10-grind75-first-bad-version-01.png)

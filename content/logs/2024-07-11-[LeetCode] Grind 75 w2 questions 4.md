@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (17/75) Longest Palindrome"
 date: 2024-07-11
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -34,7 +35,7 @@ class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/865dd4ae-2e3f-4c5e-95fe-330448ab6082)
+![image](/img/blog/2024-07-11-grind75-longest-palindrome-01.png)
 
 ## 풀이2
 ```java
@@ -70,4 +71,4 @@ class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/1f445f87-ace9-4555-a52f-1f787df4eb62)
+![image](/img/blog/2024-07-11-grind75-longest-palindrome-02.png)

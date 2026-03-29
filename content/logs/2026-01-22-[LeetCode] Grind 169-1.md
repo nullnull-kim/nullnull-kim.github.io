@@ -2,6 +2,7 @@
 title: "[LeetCode Grind 169] Week1 - 1. Two Sum"
 date: 2026-01-22
 categories: [logs]
+series: Grind 169
 ---
 
 <a href="https://leetcode.com/problems/two-sum/" target="_blank">문제로</a>

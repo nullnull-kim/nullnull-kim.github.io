@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (22/75) Middle of the Linked List"
 date: 2024-07-13
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -33,4 +34,4 @@ class Solution {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/8fa9c419-d764-4767-a78e-f376b2ead8aa)
+![image](/img/blog/2024-07-13-grind75-middle-of-linked-list-01.png)

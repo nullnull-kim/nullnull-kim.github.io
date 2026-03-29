@@ -143,3 +143,7 @@ There's a post called [50 Practical Tips for Claude Code](https://news.hada.io/t
 > 48\. Play a sound when Claude finishes — Register a system sound via Stop Hook. Start a task, switch to other work, get a ping when it's done.
 
 If you only work locally, that seems like enough.
+
+**Related posts**
+- [[Claude] (Saving Tokens) EP.1 — Hit the Limit in Three Hours](/logs/2026-03-27-token-ep1/)
+- [[Claude] (Saving Tokens) EP.2 — My Precious Must Be Protected](/logs/2026-03-28-token-ep2/)

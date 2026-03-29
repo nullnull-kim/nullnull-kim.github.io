@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (12/75) Linked List Cycle"
 date: 2024-07-08
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -39,7 +40,7 @@ public class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/27a3e251-b09c-4cb2-b2ba-c443d21c62dd)
+![LeetCode Linked List Cycle 풀이 제출 결과](/img/blog/2024-07-08-grind75-linked-list-cycle-01.png)
 
 ### 단계별 설명
 1. 초기 조건 확인: head가 null이거나 head.next가 null인 경우, 리스트가 비어있거나 노드가 하나뿐이므로 사이클이 없습니다.

@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (16/75) Climbing Stairs"
 date: 2024-07-11
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -20,7 +21,7 @@ class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/a21ca46b-5ad4-4af9-b1ac-fdc18ba717ed)
+![image](/img/blog/2024-07-11-grind75-climbing-stairs-01.png)
 
 ## 풀이2
 시간 복잡도 $O[n]$
@@ -42,7 +43,7 @@ class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/82df595b-3b8e-413a-8e90-47259ea8a203)
+![image](/img/blog/2024-07-11-grind75-climbing-stairs-02.png)
 
 ## 풀이3
 시간 복잡도 $O[n]$  
@@ -66,4 +67,4 @@ class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/6f5c6d29-37d9-4933-8410-8ea544a39fd5)
+![image](/img/blog/2024-07-11-grind75-climbing-stairs-03.png)

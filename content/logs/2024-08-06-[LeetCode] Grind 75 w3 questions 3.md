@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (28/75) 973. K Closest Points to Origin"
 date: 2024-08-06
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -35,7 +36,7 @@ class Solution {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/e1c3ea9e-fc6a-44e8-aad9-87ebb24e6855)
+![image](/img/blog/2024-08-06-grind75-k-closest-points-01.png)
 
 ### PriorityQueue
 PriorityQueue는 Java의 java.util 패키지에 속하는 클래스이며, 우선순위 큐(priority queue)로서 요소들이 우선순위에 따라 정렬되는 큐입니다. 기본적으로 최소 힙(min-heap) 구조를 사용하지만, 사용자 정의 비교기(Comparator)를 제공하여 최대 힙(max-heap)으로 사용할 수 있습니다.

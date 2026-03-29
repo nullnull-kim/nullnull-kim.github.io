@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (4/75) Best Time to Buy and Sell Stock"
 date: 2024-07-01
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -22,4 +23,4 @@ class Solution {
     }
 }
 ```
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/2ed09bcb-1137-4464-b3cc-64d320989db7)
+![image](/img/blog/2024-07-01-grind75-best-time-to-buy-and-sell-stock-01.png)

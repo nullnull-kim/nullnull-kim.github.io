@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (3/75) Merge Two Sorted Lists"
 date: 2024-07-01
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -44,7 +45,7 @@ class Solution {
     }
 }
 ```
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/20afb28f-fea9-4747-b6fb-d1675ebd60a8)
+![image](/img/blog/2024-07-01-grind75-merge-two-sorted-lists-01.png)
 
 ### 참고
 Java에서 객체를 복사할 때 얕은 복사(shallow copy)와 깊은 복사(deep copy)의 개념은 매우 중요합니다. 이 두 가지 복사 방법의 차이를 이해하면 객체의 데이터가 어떻게 복사되고, 두 객체가 어떻게 상호작용하는지를 알 수 있습니다.

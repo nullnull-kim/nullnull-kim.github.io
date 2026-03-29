@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (9/75) Flood Fill"
 date: 2024-07-02
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -33,4 +34,4 @@ class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/1902aea0-3ac7-45ca-a706-ce916aa92a68)
+![image](/img/blog/2024-07-02-grind75-flood-fill-01.png)

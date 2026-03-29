@@ -2,6 +2,7 @@
 title: "[LeetCode Grind 169] Week1 - 6. Invert Binary Tree"
 date: 2026-01-28
 categories: [logs]
+series: Grind 169
 ---
 
 <a href="https://leetcode.com/problems/invert-binary-tree/" target="_blank">문제로</a>

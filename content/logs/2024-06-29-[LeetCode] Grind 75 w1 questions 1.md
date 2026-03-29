@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (1/75) Two Sum"
 date: 2024-06-29
 categories: [logs]
+series: Grind 75
 ---
 
 [Grind75](https://www.techinterviewhandbook.org/grind75){: target="_blank"}  
@@ -29,7 +30,7 @@ class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/51341444-3d97-42f6-b26f-353fde4f5975)
+![image](/img/blog/2024-06-29-grind75-two-sum-01.png)
 
 
 ## 풀이2
@@ -52,7 +53,7 @@ class Solution {
     }
 }
 ```
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/f63881ac-9ecd-4cb0-8a69-404cbef3a22b)
+![image](/img/blog/2024-06-29-grind75-two-sum-02.png)
 
 ## 풀이3
 ```java
@@ -70,4 +71,4 @@ class Solution {
     }
 }
 ```
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/3c68bd30-50e8-43d9-8f05-036d56ca4e2a)
+![image](/img/blog/2024-06-29-grind75-two-sum-03.png)

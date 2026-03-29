@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (27/75) 01 Matrix"
 date: 2024-07-16
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -56,7 +57,7 @@ public int[][] updateMatrix(int[][] mat) {
 }
 ```
 
-![image](https://github.com/user-attachments/assets/0bc8d781-f32e-4a91-9c8d-0cb396d45b73)
+![image](/img/blog/2024-07-16-grind75-01-matrix-01.png)
 
 ### 풀이방법
 

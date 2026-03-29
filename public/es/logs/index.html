@@ -186,6 +186,35 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">[Claude] Lo que pasa cuando corres 5 proyectos a la vez — Construyendo un sistema de alertas con Discord
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Ahora tengo 5 proyectos. shop, blog, code_dungeon, good_game, y un root que los gestiona a todos (ese no es su nombre real). Cada proyecto corre su propia sesión de Claude. El problema es que yo soy uno solo.
+Si lanzo una tarea en shop y me paso a editar un borrador en blog, no sé cuándo terminó shop. Si inicio Phase 1 en code_dungeon y me voy a ver good_game, code_dungeon podría estar esperando confirmación de permisos y no me entero. Mirar 5 terminales en rotación no es monitoreo. Es solo dolor de ojos.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-29 00:00:00 +0000 UTC'>29 de marzo de 2026</span>&nbsp;·&nbsp;<span>김태영</span></footer>
+  <a class="entry-link" aria-label="post link to [Claude] Lo que pasa cuando corres 5 proyectos a la vez — Construyendo un sistema de alertas con Discord" href="http://localhost:1313/es/logs/2026-03-29-discord-alert/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">[Claude] (Lo que hice para ahorrar tokens) EP.2 — Hay que proteger my precious
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Después de reducir a 9 agentes y poner CLAUDE.md a dieta, los intervalos entre Compacting conversation... se alargaron notablemente. Las mismas tareas, pero aguantaba mucho más que antes. Me sentí bien.
+Entonces estaba viendo la consola después de pedir una nueva funcionalidad. Los tests corrieron. 30 casos, todos pasaron. Pero Claude estaba mencionando los tests exitosos otra vez. Algo se sentía raro.
+Le pregunté a Claude. “¿Por qué mencionas otra vez los tests que ya pasaron?” Claude me explicó el concepto de herramientas. Cuando Claude ejecuta un comando de terminal o lee un archivo, todo eso son “llamadas a herramientas”. Y cada vez que una herramienta se ejecuta, su resultado completo se apila en el contexto de la conversación. Resultado de npm test — 30 líneas. Log de Hugo build — 180 líneas. Todo. Los tests pasaron todos sin nada que ver, pero leyó los 30. Para arreglar errores de build, solo necesitaba las últimas 5 líneas, pero cargó las 180.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-28 00:00:00 +0000 UTC'>28 de marzo de 2026</span>&nbsp;·&nbsp;<span>김태영</span></footer>
+  <a class="entry-link" aria-label="post link to [Claude] (Lo que hice para ahorrar tokens) EP.2 — Hay que proteger my precious" href="http://localhost:1313/es/logs/2026-03-28-token-ep2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">[Claude] (Lo que hice para ahorrar tokens) EP.1 — Agoté el límite en tres horas
     </h2>
   </header>

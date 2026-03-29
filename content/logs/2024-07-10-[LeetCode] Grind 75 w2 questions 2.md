@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (15/75) Ransom Note"
 date: 2024-07-10
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -30,7 +31,7 @@ class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/b6ea5a8f-14ff-4b8c-bdbb-69d40aebc614)
+![image](/img/blog/2024-07-10-grind75-ransom-note-01.png)
 
 ## 풀이2
 ```java
@@ -60,4 +61,4 @@ public class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/3a4111a0-9b77-4953-841c-05150e045102)
+![image](/img/blog/2024-07-10-grind75-ransom-note-02.png)

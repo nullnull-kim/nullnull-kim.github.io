@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (11/75) Balanced Binary Tree"
 date: 2024-07-08
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -38,4 +39,4 @@ class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/075c0e30-b671-44fa-b838-6fafc59b1e19)
+![LeetCode Balanced Binary Tree 풀이 제출 결과](/img/blog/2024-07-08-grind75-balanced-binary-tree-01.png)

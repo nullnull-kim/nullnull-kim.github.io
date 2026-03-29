@@ -2,6 +2,7 @@
 title: "[LeetCode] Grind 75 questions (18/75) Reverse Linked List"
 date: 2024-07-11
 categories: [logs]
+series: Grind 75
 ---
 
 <a href="https://www.techinterviewhandbook.org/grind75" target="_blank">Grind75</a>  
@@ -35,4 +36,4 @@ class Solution {
 }
 ```
 
-![image](https://github.com/nullnull-kim/nullnull-kim.github.io/assets/77221161/f7f1c2f6-a29f-4514-a808-ba98fd1e4ce0)
+![image](/img/blog/2024-07-11-grind75-reverse-linked-list-01.png)
