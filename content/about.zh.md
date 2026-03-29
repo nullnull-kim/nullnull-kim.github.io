@@ -12,5 +12,6 @@ summary: "about"
 这个博客记录试错经历、日常生活，偶尔也写写LeetCode题解。
 
 - GitHub: [nullnull-kim](https://github.com/nullnull-kim)
+- Email: nullnull.kim@gmail.com
 - 博客引擎: Hugo + PaperMod
 - 部署: Cloudflare

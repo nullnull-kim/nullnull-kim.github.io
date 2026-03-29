@@ -34,3 +34,6 @@ class Solution {
 <hr>
 정규식으로 풀었더니 최하위 점수를 받았다 ... 정규식은 많은 비용을 감수한다 메모하기 ... kotlin의 when은 참 편리한것같다 ...
 <hr>
+
+---
+> 이 문제는 Grind 75에서도 다뤘다: [Grind 75 - Valid Palindrome]({{< ref "2024-07-01-[LeetCode] Grind 75 w1 questions 5.md" >}})

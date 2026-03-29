@@ -42,3 +42,6 @@ class Solution {
 ```
 
 ![image](/img/blog/2024-07-01-grind75-valid-palindrome-02.png)
+
+---
+> 이 문제는 Grind 169에서도 다뤘다: [Grind 169 - Valid Palindrome]({{< ref "2026-01-27-[LeetCode] Grind 169-5.md" >}})

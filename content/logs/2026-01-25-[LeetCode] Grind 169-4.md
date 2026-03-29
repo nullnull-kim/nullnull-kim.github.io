@@ -24,3 +24,6 @@ class Solution {
     }
 }
 ```
+
+---
+> 이 문제는 Grind 75에서도 다뤘다: [Grind 75 - Best Time to Buy and Sell Stock]({{< ref "2024-07-01-[LeetCode] Grind 75 w1 questions 4.md" >}})

@@ -12,5 +12,6 @@ A firm banking specialist who got lucky enough to land in financial IT services,
 This blog documents trial and error, daily life, and the occasional LeetCode solution.
 
 - GitHub: [nullnull-kim](https://github.com/nullnull-kim)
+- Email: nullnull.kim@gmail.com
 - Blog engine: Hugo + PaperMod
 - Hosting: Cloudflare

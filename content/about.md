@@ -12,5 +12,6 @@ summary: "about"
 이 블로그에는 시행착오, 일상, 그리고 가끔 LeetCode 풀이를 기록합니다.
 
 - GitHub: [nullnull-kim](https://github.com/nullnull-kim)
+- Email: nullnull.kim@gmail.com
 - 블로그 엔진: Hugo + PaperMod
 - 배포: Cloudflare

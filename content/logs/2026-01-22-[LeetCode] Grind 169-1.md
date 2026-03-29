@@ -276,3 +276,6 @@ else( 아니면 연결 리스트를 끝까지 순회하며) 탐색<br>
 <hr>
 *결론, getNode()는 key의 해시로 해당 버킷의 Node 체인(또는 트리)만 탐색한다. 따라서 평균적으로는 조회가 O(1)에 가깝다...*
 <hr>
+
+---
+> 이 문제는 Grind 75에서도 다뤘다: [Grind 75 - Two Sum]({{< ref "2024-06-29-[LeetCode] Grind 75 w1 questions 1.md" >}})

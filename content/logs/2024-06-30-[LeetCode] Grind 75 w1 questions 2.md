@@ -42,5 +42,8 @@ public E push(E item)
 public E pop()
 public E peek()
 public boolean empty()
-public int search(Object o) 
+public int search(Object o)
 ```
+
+---
+> 이 문제는 Grind 169에서도 다뤘다: [Grind 169 - Valid Parentheses]({{< ref "2026-01-24-[LeetCode] Grind 169-2.md" >}})

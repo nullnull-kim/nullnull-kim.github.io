@@ -1,5 +1,5 @@
 ---
-title: "[LeetCode] Grind 75 questions"
+title: "LeetCode Grind 75 — 문제 목록과 풀이 계획"
 date: 2024-06-29
 categories: [logs]
 series: Grind 75

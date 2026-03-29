@@ -52,3 +52,6 @@ class Solution {
 <hr>
 TODO. 전위,중위,후위 탐색이 필요한 경우 각각 공부해놓기
 <hr>
+
+---
+> 이 문제는 Grind 75에서도 다뤘다: [Grind 75 - Invert Binary Tree]({{< ref "2024-07-01-[LeetCode] Grind 75 w1 questions 6.md" >}})

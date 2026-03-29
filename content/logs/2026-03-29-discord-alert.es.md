@@ -1,5 +1,5 @@
 ---
-title: "[Claude] Lo que pasa cuando corres 5 proyectos a la vez — Construyendo un sistema de alertas con Discord"
+title: "Claude Code Alertas Discord — Sistema de monitoreo multiproyecto"
 date: 2026-03-29
 categories: [logs]
 tags: [claude, vibe-coding, ai-workflow, discord, webhook, claude-code-hooks, monitoring, automation, heartbeat, multi-project, notification, devops, productivity]

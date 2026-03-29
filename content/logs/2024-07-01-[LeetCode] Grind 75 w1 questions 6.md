@@ -43,3 +43,6 @@ class Solution {
 }
 ```
 ![image](/img/blog/2024-07-01-grind75-invert-binary-tree-01.png)
+
+---
+> 이 문제는 Grind 169에서도 다뤘다: [Grind 169 - Invert Binary Tree]({{< ref "2026-01-28-[LeetCode] Grind 169-6.md" >}})

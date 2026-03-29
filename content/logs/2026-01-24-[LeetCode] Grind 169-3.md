@@ -68,4 +68,7 @@ class Solution {
         }
     }
 }
+
+---
+> 이 문제는 Grind 75에서도 다뤘다: [Grind 75 - Merge Two Sorted Lists]({{< ref "2024-07-01-[LeetCode] Grind 75 w1 questions 3.md" >}})
 ```

@@ -24,3 +24,6 @@ class Solution {
 }
 ```
 ![image](/img/blog/2024-07-01-grind75-best-time-to-buy-and-sell-stock-01.png)
+
+---
+> 이 문제는 Grind 169에서도 다뤘다: [Grind 169 - Best Time to Buy and Sell Stock]({{< ref "2026-01-25-[LeetCode] Grind 169-4.md" >}})

@@ -1,5 +1,5 @@
 ---
-title: "[LeetCode] Grind 169 도전"
+title: "LeetCode Grind 169 — 도전 시작과 풀이 계획"
 date: 2026-01-21
 categories: [logs]
 series: Grind 169

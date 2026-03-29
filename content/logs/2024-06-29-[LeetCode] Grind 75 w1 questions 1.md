@@ -72,3 +72,6 @@ class Solution {
 }
 ```
 ![image](/img/blog/2024-06-29-grind75-two-sum-03.png)
+
+---
+> 이 문제는 Grind 169에서도 다뤘다: [Grind 169 - Two Sum]({{< ref "2026-01-22-[LeetCode] Grind 169-1.md" >}})

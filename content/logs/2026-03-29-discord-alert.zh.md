@@ -1,5 +1,5 @@
 ---
-title: "[Claude] 同时跑5个项目会发生什么 — Discord通知系统搭建记"
+title: "Claude Code Discord通知集成 — 多项目监控系统搭建记"
 date: 2026-03-29
 categories: [logs]
 tags: [claude, vibe-coding, ai-workflow, discord, webhook, claude-code-hooks, monitoring, automation, heartbeat, multi-project, notification, devops, productivity]

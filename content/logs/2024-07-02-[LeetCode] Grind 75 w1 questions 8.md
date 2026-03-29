@@ -31,3 +31,6 @@ class Solution {
 ```
 
 ![image](/img/blog/2024-07-02-grind75-binary-search-01.png)
+
+---
+> 이 문제는 Grind 169에서도 다뤘다: [Grind 169 - Binary Search]({{< ref "2026-02-03-[LeetCode] Grind 169-8.md" >}})

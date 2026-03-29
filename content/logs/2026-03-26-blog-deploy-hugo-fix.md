@@ -1,5 +1,5 @@
 ---
-title: "[트러블슈팅] Hugo 배포 에러 - paginate 설정 키 제거 대응"
+title: "Hugo paginate 에러 해결 — Cloudflare Pages 배포 실패 트러블슈팅"
 date: 2026-03-26
 categories: [logs]
 ---

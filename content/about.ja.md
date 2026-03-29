@@ -12,5 +12,6 @@ summary: "about"
 このブログには試行錯誤、日常、そしてたまにLeetCodeの解法を記録しています。
 
 - GitHub: [nullnull-kim](https://github.com/nullnull-kim)
+- Email: nullnull.kim@gmail.com
 - ブログエンジン: Hugo + PaperMod
 - ホスティング: Cloudflare

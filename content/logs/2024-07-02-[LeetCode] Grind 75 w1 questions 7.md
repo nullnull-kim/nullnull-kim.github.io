@@ -51,3 +51,6 @@ class Solution {
 }
 ```
 ![image](/img/blog/2024-07-02-grind75-valid-anagram-02.png)
+
+---
+> 이 문제는 Grind 169에서도 다뤘다: [Grind 169 - Valid Anagram]({{< ref "2026-01-29-[LeetCode] Grind 169-7.md" >}})

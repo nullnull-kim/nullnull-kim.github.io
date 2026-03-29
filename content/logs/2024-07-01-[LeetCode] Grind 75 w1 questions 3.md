@@ -115,3 +115,6 @@ class DeepCopyExample {
 }
 
 ```
+
+---
+> 이 문제는 Grind 169에서도 다뤘다: [Grind 169 - Merge Two Sorted Lists]({{< ref "2026-01-24-[LeetCode] Grind 169-3.md" >}})

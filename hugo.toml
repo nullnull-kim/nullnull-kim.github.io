@@ -49,6 +49,7 @@ defaultContentLanguageInSubdir = false
 [params]
   env = "production"
   author = "김태영"
+  images = ["/img/me.png"]
   [params.assets]
     disableFingerprinting = true
   defaultTheme = "auto"

@@ -12,5 +12,6 @@ Un especialista en banca empresarial que tuvo la suerte de entrar en el sector f
 En este blog registro prueba y error, vida cotidiana y, de vez en cuando, soluciones de LeetCode.
 
 - GitHub: [nullnull-kim](https://github.com/nullnull-kim)
+- Email: nullnull.kim@gmail.com
 - Motor del blog: Hugo + PaperMod
 - Hosting: Cloudflare

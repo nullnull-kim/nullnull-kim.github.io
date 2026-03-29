@@ -1,5 +1,5 @@
 ---
-title: "[Claude] 프로젝트 5개를 동시에 돌리면 생기는 일 — Discord 알림 시스템 구축기"
+title: "Claude Code Discord 알림 연동 — 멀티 프로젝트 모니터링 구축기"
 date: 2026-03-29
 categories: [logs]
 tags: [claude, vibe-coding, ai-workflow, discord, webhook, claude-code-hooks, monitoring, automation, heartbeat, multi-project, notification, devops, productivity]

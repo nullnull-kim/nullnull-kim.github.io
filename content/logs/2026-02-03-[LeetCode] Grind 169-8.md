@@ -29,3 +29,6 @@ class Solution {
 }
 ```
 <br>
+
+---
+> 이 문제는 Grind 75에서도 다뤘다: [Grind 75 - Binary Search]({{< ref "2024-07-02-[LeetCode] Grind 75 w1 questions 8.md" >}})

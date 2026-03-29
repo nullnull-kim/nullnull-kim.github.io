@@ -1,5 +1,5 @@
 ---
-title: "[Claude] 5つのプロジェクトを同時に回すと起きること — Discord通知システム構築記"
+title: "Claude Code Discord通知連携 — マルチプロジェクトモニタリング構築記"
 date: 2026-03-29
 categories: [logs]
 tags: [claude, vibe-coding, ai-workflow, discord, webhook, claude-code-hooks, monitoring, automation, heartbeat, multi-project, notification, devops, productivity]
