@@ -1,19 +1,56 @@
 baseURL = "https://nullnull-kim.com/"
-languageCode = "ko"
-title = "김태영"
 theme = "PaperMod"
 enableGitInfo = true
 enableRobotsTXT = true
 hasCJKLanguage = true
+defaultContentLanguage = "ko"
+defaultContentLanguageInSubdir = false
+
 [pagination]
   pagerSize = 10
+
+[languages]
+  [languages.ko]
+    languageName = "한국어"
+    languageCode = "ko"
+    weight = 1
+    title = "김태영"
+    [languages.ko.params]
+      description = "개발자 김태영의 기술 블로그 — Claude 활용기, LeetCode 풀이, 일상 기록"
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 2
+    title = "Taeyoung Kim"
+    [languages.en.params]
+      description = "Developer Taeyoung Kim's tech blog — Claude tips, LeetCode solutions, and daily logs"
+  [languages.ja]
+    languageName = "日本語"
+    languageCode = "ja"
+    weight = 3
+    title = "キム・テヨン"
+    [languages.ja.params]
+      description = "開発者キム・テヨンの技術ブログ — Claude活用記、LeetCode解法、日常記録"
+  [languages.zh]
+    languageName = "中文"
+    languageCode = "zh"
+    weight = 4
+    title = "金泰英"
+    [languages.zh.params]
+      description = "开发者金泰英的技术博客 — Claude使用技巧、LeetCode题解、日常记录"
+  [languages.es]
+    languageName = "Español"
+    languageCode = "es"
+    weight = 5
+    title = "Taeyoung Kim"
+    [languages.es.params]
+      description = "Blog técnico del desarrollador Taeyoung Kim — consejos de Claude, soluciones LeetCode y registro diario"
 
 [params]
   env = "production"
   author = "김태영"
   [params.assets]
     disableFingerprinting = true
-  description = "개발자 김태영의 기술 블로그 — Claude 활용기, LeetCode 풀이, 일상 기록"
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = false

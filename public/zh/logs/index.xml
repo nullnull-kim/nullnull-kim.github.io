@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Logs on 金泰英</title>
+    <link>http://localhost:1313/zh/logs/</link>
+    <description>Recent content in Logs on 金泰英</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/logs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Claude]（为了省Token做过的事）EP.1 — 三小时就超额的故事</title>
+      <link>http://localhost:1313/zh/logs/2026-03-27-token-ep1/</link>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/zh/logs/2026-03-27-token-ep1/</guid>
+      <description>&lt;p&gt;朋友委托我搭建一个化妆品购物网站。在公司一直只写C，这是一个尝试新技术栈的机会。支付用Toss Payments，前端用React。&amp;ldquo;金融业下一代项目全在用React&amp;quot;这句话一直在我心里，Toss Payments也是Node友好的。方向很快就定下来了。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

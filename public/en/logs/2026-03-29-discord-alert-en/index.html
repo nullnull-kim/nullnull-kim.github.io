@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>[Claude] What Happens When You Run 5 Projects at Once — Building a Discord Alert System | Taeyoung Kim</title>
+<meta name="keywords" content="claude, vibe-coding, ai-workflow, discord, webhook, claude-code-hooks, monitoring, automation, heartbeat, multi-project, notification, devops, productivity">
+<meta name="description" content="I now have 5 projects. shop, blog, code_dungeon, good_game, and a root that manages them all (that&rsquo;s not its actual name). Each project runs its own Claude session. The problem is there&rsquo;s only one of me.
+If I kick off a task in shop and switch to editing a draft in blog, I have no idea when shop finishes. If I start Phase 1 in code_dungeon and go check on good_game, code_dungeon might be stuck waiting for permission and I wouldn&rsquo;t know. Staring at 5 terminals in rotation isn&rsquo;t monitoring. It&rsquo;s just eye strain.">
+<meta name="author" content="김태영">
+<link rel="canonical" href="http://localhost:1313/en/logs/2026-03-29-discord-alert-en/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="ko" href="http://localhost:1313/logs/2026-03-29-discord-alert/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/en/logs/2026-03-29-discord-alert-en/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" async
+   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script><meta property="og:url" content="http://localhost:1313/en/logs/2026-03-29-discord-alert-en/">
+  <meta property="og:site_name" content="Taeyoung Kim">
+  <meta property="og:title" content="[Claude] What Happens When You Run 5 Projects at Once — Building a Discord Alert System">
+  <meta property="og:description" content="I now have 5 projects. shop, blog, code_dungeon, good_game, and a root that manages them all (that’s not its actual name). Each project runs its own Claude session. The problem is there’s only one of me.
+If I kick off a task in shop and switch to editing a draft in blog, I have no idea when shop finishes. If I start Phase 1 in code_dungeon and go check on good_game, code_dungeon might be stuck waiting for permission and I wouldn’t know. Staring at 5 terminals in rotation isn’t monitoring. It’s just eye strain.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="logs">
+    <meta property="article:published_time" content="2026-03-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-29T00:00:00+00:00">
+    <meta property="article:tag" content="Claude">
+    <meta property="article:tag" content="Vibe-Coding">
+    <meta property="article:tag" content="Ai-Workflow">
+    <meta property="article:tag" content="Discord">
+    <meta property="article:tag" content="Webhook">
+    <meta property="article:tag" content="Claude-Code-Hooks">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="[Claude] What Happens When You Run 5 Projects at Once — Building a Discord Alert System">
+  <meta name="twitter:description" content="I now have 5 projects. shop, blog, code_dungeon, good_game, and a root that manages them all (that’s not its actual name). Each project runs its own Claude session. The problem is there’s only one of me.
+If I kick off a task in shop and switch to editing a draft in blog, I have no idea when shop finishes. If I start Phase 1 in code_dungeon and go check on good_game, code_dungeon might be stuck waiting for permission and I wouldn’t know. Staring at 5 terminals in rotation isn’t monitoring. It’s just eye strain.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Logs",
+      "item": "http://localhost:1313/en/logs/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "[Claude] What Happens When You Run 5 Projects at Once — Building a Discord Alert System",
+      "item": "http://localhost:1313/en/logs/2026-03-29-discord-alert-en/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "[Claude] What Happens When You Run 5 Projects at Once — Building a Discord Alert System",
+  "name": "[Claude] What Happens When You Run 5 Projects at Once — Building a Discord Alert System",
+  "description": "I now have 5 projects. shop, blog, code_dungeon, good_game, and a root that manages them all (that\u0026rsquo;s not its actual name). Each project runs its own Claude session. The problem is there\u0026rsquo;s only one of me.\nIf I kick off a task in shop and switch to editing a draft in blog, I have no idea when shop finishes. If I start Phase 1 in code_dungeon and go check on good_game, code_dungeon might be stuck waiting for permission and I wouldn\u0026rsquo;t know. Staring at 5 terminals in rotation isn\u0026rsquo;t monitoring. It\u0026rsquo;s just eye strain.\n",
+  "keywords": [
+    "claude", "vibe-coding", "ai-workflow", "discord", "webhook", "claude-code-hooks", "monitoring", "automation", "heartbeat", "multi-project", "notification", "devops", "productivity"
+  ],
+  "articleBody": "I now have 5 projects. shop, blog, code_dungeon, good_game, and a root that manages them all (that’s not its actual name). Each project runs its own Claude session. The problem is there’s only one of me.\nIf I kick off a task in shop and switch to editing a draft in blog, I have no idea when shop finishes. If I start Phase 1 in code_dungeon and go check on good_game, code_dungeon might be stuck waiting for permission and I wouldn’t know. Staring at 5 terminals in rotation isn’t monitoring. It’s just eye strain.\nI need alerts.\nWhy Discord Webhooks Slack exists. Telegram exists. I picked Discord. The reason is simple: you can create unlimited channels for free. One channel per project means alerts don’t mix. root-alerts, shop-alerts, blog-alerts, code_dungeon-alerts, good_game-alerts. One webhook URL per channel.\nI stored each webhook URL in .claude/.discord-webhook inside each project. Hardcoding URLs in scripts means editing the script every time a project is added, but with separate files, I just create a new webhook file.\nFirst Hook: Alert on Completion I wired a Discord notification script to the Stop hook. When a session ends, it sends the project name and timestamp to Discord.\n1 2 # Capture stdin immediately (prevent stdin race with other async hooks) INPUT=$(cat) The Stop hook runs async. When multiple hooks run simultaneously, there’s no guarantee which one gets stdin. INPUT=$(cat) at the very top of the script captures it immediately.\nEvery Stop Reason Was “unknown” Alerts started coming in, but every single one said “unknown.” [shop] unknown — 03-28 18:01. I know it finished, but not why. Normal completion? Token overflow? Refusal?\nI dug into the Stop hook payload. No stop_reason field. The JSON that Claude Code passes to hooks doesn’t include the session termination reason.\nI found a workaround. The payload has transcript_path — the path to a JSONL file containing the entire session transcript. It looks like this:\n{\"type\":\"user\",\"message\":{\"role\":\"user\",\"content\":\"Change the project path\"},...} {\"type\":\"assistant\",\"message\":{\"role\":\"assistant\",\"content\":[{\"type\":\"text\",\"text\":\"...\"}],\"stop_reason\":\"end_turn\",...},...} One line per event, and assistant messages contain the stop_reason field. I rewrote the script to traverse this file in reverse and extract the last stop_reason.\n1 2 3 4 5 const lines = fs.readFileSync(tp, 'utf8').split('\\n').filter(l =\u003e l.trim()); for (let i = lines.length - 1; i \u003e= 0; i--) { const e = JSON.parse(lines[i]); if (e.stop_reason) { /* found it */ } } There are 7 possible stop reasons. I mapped each to a Korean label.\nstop_reason Alert Label end_turn 완료 (Complete) max_tokens 토큰초과 (Token Overflow) model_context_window_exceeded 컨텍스트초과 (Context Overflow) stop_sequence 중단시퀀스 (Stop Sequence) pause_turn 일시정지 (Paused) refusal 거부 (Refused) tool_use 도구호출 (Tool Call) Now I get alerts like [shop] 완료 — 03-28 18:01 and [blog] 토큰초과 — 03-28 15:32.\nFiltering Sub-agent Alerts A completion alert came through, so I checked the terminal — still running. I added debug logging and investigated. The cause was sub-agent parallel tasks completing.\nHere’s the task processing structure I set up for the shop project:\nCustomer Request → task-orchestrator (main) ├─ frontend-developer → UI implementation ├─ backend-developer → API implementation ├─ code-reviewer → Code review + performance check ├─ security-auditor → Security audit (conditional) └─ quality-gatekeeper → Final verification Every time a sub-agent finishes, the Stop hook fires. Even though the main session hasn’t ended. If 5 sub-agents are attached to one task, that’s 6 alerts. frontend-developer complete, backend-developer complete, code-reviewer complete… meanwhile the main session is still going.\nIf the payload has an agent_id field, it’s a sub-agent. I added a filter to skip both alerts and heartbeat deletion for sub-agents.\n1 2 IS_SUBAGENT=$(echo \"$INPUT\" | node -e \"...\" 2\u003e/dev/null) [ \"$IS_SUBAGENT\" = \"yes\" ] \u0026\u0026 exit 0 Completion Alerts Aren’t Enough When Claude requests permission confirmation, asks for file write access, or waits for user input, the Stop hook doesn’t fire. “This task must be taking a while,” I thought, waiting — then checked and found it had been waiting for my response for dozens of minutes.\nSecond Hook: Waiting Alert The idea is simple. Every time Claude executes a tool, it writes a timestamp. If the timestamp hasn’t been updated for 2 minutes, the project is considered stalled.\nI connected a heartbeat script to the PostToolUse hook. Every tool execution writes the current time to .claude/.heartbeat.\n1 date +%s \u003e \"$PROJECT_ROOT/.claude/.heartbeat\" That’s it. A one-line hook.\nA separate watcher script checks all 5 projects’ heartbeat files every 60 seconds. If the last update was more than 2 minutes ago, it sends a “waiting” alert to Discord. No re-alerts within 10 minutes for the same project. Otherwise it’s alert spam.\n1 2 3 STALE_THRESHOLD=120 # 2 minutes COOLDOWN=600 # 10-minute re-alert prevention CHECK_INTERVAL=60 # Check every 60 seconds When a session ends, the Stop hook deletes the heartbeat file. This prevents “waiting” alerts for projects that have already finished.\nNow only main session completion alerts come through.\nCurrent Setup Two hooks and one watcher script.\nComponent Trigger Role heartbeat.sh PostToolUse Update timestamp on every tool execution notify-discord.sh Stop Discord alert on session end + delete heartbeat watcher.ps1 60s interval (always running) “Waiting” alert when heartbeat stale \u003e 2min .discord-webhook — Per-project webhook URL storage Adding a new project takes two steps: put the webhook URL in .claude/.discord-webhook and add the path to the watcher.ps1 PROJECTS array.\n5 projects are running simultaneously. Discord alerts are firing. At least now I know which one is stuck.\nSomething I Read After Building This There’s a post called 50 Practical Tips for Claude Code with this item:\n48. Play a sound when Claude finishes — Register a system sound via Stop Hook. Start a task, switch to other work, get a ping when it’s done.\nIf you only work locally, that seems like enough.\n",
+  "wordCount" : "973",
+  "inLanguage": "en",
+  "datePublished": "2026-03-29T00:00:00Z",
+  "dateModified": "2026-03-29T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "김태영"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/en/logs/2026-03-29-discord-alert-en/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Taeyoung Kim",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/en/" accesskey="h" title="Taeyoung Kim (Alt + H)">Taeyoung Kim</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                    <ul class="lang-switch"><li>|</li>
+                        <li>
+                            <a href="http://localhost:1313/" title="한국어"
+                                aria-label="한국어">Ko</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/ja/" title="日本語"
+                                aria-label="日本語">Ja</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/zh/" title="中文"
+                                aria-label="中文">Zh</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:1313/es/" title="Español"
+                                aria-label="Español">Es</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/en/logs/" title="Logs">
+                    <span>Logs</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/en/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/en/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      [Claude] What Happens When You Run 5 Projects at Once — Building a Discord Alert System
+    </h1>
+    <div class="post-meta"><span title='2026-03-29 00:00:00 +0000 UTC'>March 29, 2026</span>&nbsp;·&nbsp;<span>김태영</span>&nbsp;|&nbsp;<span>Translations:</span>
+<ul class="i18n_list">
+    <li>
+        <a href="http://localhost:1313/logs/2026-03-29-discord-alert/">Ko</a>
+    </li>
+</ul>
+
+</div>
+  </header> 
+  <div class="post-content"><p>I now have 5 projects. shop, blog, code_dungeon, good_game, and a root that manages them all (that&rsquo;s not its actual name). Each project runs its own Claude session. The problem is there&rsquo;s only one of me.</p>
+<p>If I kick off a task in shop and switch to editing a draft in blog, I have no idea when shop finishes. If I start Phase 1 in code_dungeon and go check on good_game, code_dungeon might be stuck waiting for permission and I wouldn&rsquo;t know. Staring at 5 terminals in rotation isn&rsquo;t monitoring. It&rsquo;s just eye strain.</p>
+<p>I need alerts.</p>
+<h2 id="why-discord-webhooks">Why Discord Webhooks<a hidden class="anchor" aria-hidden="true" href="#why-discord-webhooks">#</a></h2>
+<p>Slack exists. Telegram exists. I picked Discord. The reason is simple: you can create unlimited channels for free. One channel per project means alerts don&rsquo;t mix. root-alerts, shop-alerts, blog-alerts, code_dungeon-alerts, good_game-alerts. One webhook URL per channel.</p>
+<p>I stored each webhook URL in <code>.claude/.discord-webhook</code> inside each project. Hardcoding URLs in scripts means editing the script every time a project is added, but with separate files, I just create a new webhook file.</p>
+<h2 id="first-hook-alert-on-completion">First Hook: Alert on Completion<a hidden class="anchor" aria-hidden="true" href="#first-hook-alert-on-completion">#</a></h2>
+<p>I wired a Discord notification script to the <a href="https://docs.anthropic.com/en/docs/claude-code/hooks">Stop hook</a>. When a session ends, it sends the project name and timestamp to Discord.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Capture stdin immediately (prevent stdin race with other async hooks)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">INPUT</span><span class="o">=</span><span class="k">$(</span>cat<span class="k">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The Stop hook runs async. When multiple hooks run simultaneously, there&rsquo;s no guarantee which one gets stdin. <code>INPUT=$(cat)</code> at the very top of the script captures it immediately.</p>
+<h2 id="every-stop-reason-was-unknown">Every Stop Reason Was &ldquo;unknown&rdquo;<a hidden class="anchor" aria-hidden="true" href="#every-stop-reason-was-unknown">#</a></h2>
+<p>Alerts started coming in, but every single one said &ldquo;unknown.&rdquo; <strong>[shop] unknown — 03-28 18:01</strong>. I know it finished, but not <em>why</em>. Normal completion? Token overflow? Refusal?</p>
+<p>I dug into the Stop hook payload. No <code>stop_reason</code> field. The JSON that Claude Code passes to hooks doesn&rsquo;t include the session termination reason.</p>
+<p>I found a workaround. The payload has <code>transcript_path</code> — the path to a JSONL file containing the entire session transcript. It looks like this:</p>
+<pre tabindex="0"><code class="language-jsonl" data-lang="jsonl">{&#34;type&#34;:&#34;user&#34;,&#34;message&#34;:{&#34;role&#34;:&#34;user&#34;,&#34;content&#34;:&#34;Change the project path&#34;},...}
+{&#34;type&#34;:&#34;assistant&#34;,&#34;message&#34;:{&#34;role&#34;:&#34;assistant&#34;,&#34;content&#34;:[{&#34;type&#34;:&#34;text&#34;,&#34;text&#34;:&#34;...&#34;}],&#34;stop_reason&#34;:&#34;end_turn&#34;,...},...}
+</code></pre><p>One line per event, and assistant messages contain the <code>stop_reason</code> field. I rewrote the script to traverse this file in reverse and extract the last <code>stop_reason</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">lines</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="nx">tp</span><span class="p">,</span> <span class="s1">&#39;utf8&#39;</span><span class="p">).</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;\n&#39;</span><span class="p">).</span><span class="nx">filter</span><span class="p">(</span><span class="nx">l</span> <span class="p">=&gt;</span> <span class="nx">l</span><span class="p">.</span><span class="nx">trim</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">lines</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">e</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">lines</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">stop_reason</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/* found it */</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>There are 7 possible stop reasons. I mapped each to a Korean label.</p>
+<table>
+  <thead>
+      <tr>
+          <th>stop_reason</th>
+          <th>Alert Label</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>end_turn</td>
+          <td>완료 (Complete)</td>
+      </tr>
+      <tr>
+          <td>max_tokens</td>
+          <td>토큰초과 (Token Overflow)</td>
+      </tr>
+      <tr>
+          <td>model_context_window_exceeded</td>
+          <td>컨텍스트초과 (Context Overflow)</td>
+      </tr>
+      <tr>
+          <td>stop_sequence</td>
+          <td>중단시퀀스 (Stop Sequence)</td>
+      </tr>
+      <tr>
+          <td>pause_turn</td>
+          <td>일시정지 (Paused)</td>
+      </tr>
+      <tr>
+          <td>refusal</td>
+          <td>거부 (Refused)</td>
+      </tr>
+      <tr>
+          <td>tool_use</td>
+          <td>도구호출 (Tool Call)</td>
+      </tr>
+  </tbody>
+</table>
+<p>Now I get alerts like <strong>[shop] 완료 — 03-28 18:01</strong> and <strong>[blog] 토큰초과 — 03-28 15:32</strong>.</p>
+<h2 id="filtering-sub-agent-alerts">Filtering Sub-agent Alerts<a hidden class="anchor" aria-hidden="true" href="#filtering-sub-agent-alerts">#</a></h2>
+<p>A completion alert came through, so I checked the terminal — still running. I added debug logging and investigated. The cause was sub-agent parallel tasks completing.</p>
+<p>Here&rsquo;s the task processing structure I set up for the shop project:</p>
+<pre tabindex="0"><code>Customer Request
+  → task-orchestrator (main)
+      ├─ frontend-developer   → UI implementation
+      ├─ backend-developer    → API implementation
+      ├─ code-reviewer        → Code review + performance check
+      ├─ security-auditor     → Security audit (conditional)
+      └─ quality-gatekeeper   → Final verification
+</code></pre><p>Every time a sub-agent finishes, the Stop hook fires. Even though the main session hasn&rsquo;t ended. If 5 sub-agents are attached to one task, that&rsquo;s 6 alerts. frontend-developer complete, backend-developer complete, code-reviewer complete&hellip; meanwhile the main session is still going.</p>
+<p>If the payload has an <code>agent_id</code> field, it&rsquo;s a sub-agent. I added a filter to skip both alerts and heartbeat deletion for sub-agents.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">IS_SUBAGENT</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$INPUT</span><span class="s2">&#34;</span> <span class="p">|</span> node -e <span class="s2">&#34;...&#34;</span> 2&gt;/dev/null<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$IS_SUBAGENT</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;yes&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">exit</span> <span class="m">0</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="completion-alerts-arent-enough">Completion Alerts Aren&rsquo;t Enough<a hidden class="anchor" aria-hidden="true" href="#completion-alerts-arent-enough">#</a></h2>
+<p>When Claude requests permission confirmation, asks for file write access, or waits for user input, the Stop hook doesn&rsquo;t fire. &ldquo;This task must be taking a while,&rdquo; I thought, waiting — then checked and found it had been waiting for my response for dozens of minutes.</p>
+<h2 id="second-hook-waiting-alert">Second Hook: Waiting Alert<a hidden class="anchor" aria-hidden="true" href="#second-hook-waiting-alert">#</a></h2>
+<p>The idea is simple. Every time Claude executes a tool, it writes a timestamp. If the timestamp hasn&rsquo;t been updated for 2 minutes, the project is considered stalled.</p>
+<p>I connected a heartbeat script to the PostToolUse hook. Every tool execution writes the current time to <code>.claude/.heartbeat</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">date +%s &gt; <span class="s2">&#34;</span><span class="nv">$PROJECT_ROOT</span><span class="s2">/.claude/.heartbeat&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>That&rsquo;s it. A one-line hook.</p>
+<p>A separate watcher script checks all 5 projects&rsquo; heartbeat files every 60 seconds. If the last update was more than 2 minutes ago, it sends a &ldquo;waiting&rdquo; alert to Discord. No re-alerts within 10 minutes for the same project. Otherwise it&rsquo;s alert spam.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">STALE_THRESHOLD</span><span class="o">=</span><span class="m">120</span>    <span class="c1"># 2 minutes</span>
+</span></span><span class="line"><span class="cl"><span class="nv">COOLDOWN</span><span class="o">=</span><span class="m">600</span>           <span class="c1"># 10-minute re-alert prevention</span>
+</span></span><span class="line"><span class="cl"><span class="nv">CHECK_INTERVAL</span><span class="o">=</span><span class="m">60</span>      <span class="c1"># Check every 60 seconds</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>When a session ends, the Stop hook deletes the heartbeat file. This prevents &ldquo;waiting&rdquo; alerts for projects that have already finished.</p>
+<p>Now only main session completion alerts come through.</p>
+<h2 id="current-setup">Current Setup<a hidden class="anchor" aria-hidden="true" href="#current-setup">#</a></h2>
+<p>Two hooks and one watcher script.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Trigger</th>
+          <th>Role</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>heartbeat.sh</td>
+          <td>PostToolUse</td>
+          <td>Update timestamp on every tool execution</td>
+      </tr>
+      <tr>
+          <td>notify-discord.sh</td>
+          <td>Stop</td>
+          <td>Discord alert on session end + delete heartbeat</td>
+      </tr>
+      <tr>
+          <td>watcher.ps1</td>
+          <td>60s interval (always running)</td>
+          <td>&ldquo;Waiting&rdquo; alert when heartbeat stale &gt; 2min</td>
+      </tr>
+      <tr>
+          <td>.discord-webhook</td>
+          <td>—</td>
+          <td>Per-project webhook URL storage</td>
+      </tr>
+  </tbody>
+</table>
+<p>Adding a new project takes two steps: put the webhook URL in <code>.claude/.discord-webhook</code> and add the path to the watcher.ps1 PROJECTS array.</p>
+<p>5 projects are running simultaneously. Discord alerts are firing. At least now I know which one is stuck.</p>
+<p><img alt="Discord Alert Screenshot" loading="lazy" src="/img/blog/2026-03-29-discord-alert-01.png"></p>
+<h2 id="something-i-read-after-building-this">Something I Read After Building This<a hidden class="anchor" aria-hidden="true" href="#something-i-read-after-building-this">#</a></h2>
+<p>There&rsquo;s a post called <a href="https://news.hada.io/topic?id=27677">50 Practical Tips for Claude Code</a> with this item:</p>
+<blockquote>
+<p>48. Play a sound when Claude finishes — Register a system sound via Stop Hook. Start a task, switch to other work, get a ping when it&rsquo;s done.</p>
+</blockquote>
+<p>If you only work locally, that seems like enough.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/en/tags/claude/">Claude</a></li>
+      <li><a href="http://localhost:1313/en/tags/vibe-coding/">Vibe-Coding</a></li>
+      <li><a href="http://localhost:1313/en/tags/ai-workflow/">Ai-Workflow</a></li>
+      <li><a href="http://localhost:1313/en/tags/discord/">Discord</a></li>
+      <li><a href="http://localhost:1313/en/tags/webhook/">Webhook</a></li>
+      <li><a href="http://localhost:1313/en/tags/claude-code-hooks/">Claude-Code-Hooks</a></li>
+      <li><a href="http://localhost:1313/en/tags/monitoring/">Monitoring</a></li>
+      <li><a href="http://localhost:1313/en/tags/automation/">Automation</a></li>
+      <li><a href="http://localhost:1313/en/tags/heartbeat/">Heartbeat</a></li>
+      <li><a href="http://localhost:1313/en/tags/multi-project/">Multi-Project</a></li>
+      <li><a href="http://localhost:1313/en/tags/notification/">Notification</a></li>
+      <li><a href="http://localhost:1313/en/tags/devops/">Devops</a></li>
+      <li><a href="http://localhost:1313/en/tags/productivity/">Productivity</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/en/">Taeyoung Kim</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

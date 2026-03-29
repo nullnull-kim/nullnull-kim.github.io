@@ -1,20 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>일상 on 김태영</title>
-    <link>http://localhost:1313/tags/%EC%9D%BC%EC%83%81/</link>
-    <description>Recent content in 일상 on 김태영</description>
-    <generator>Hugo</generator>
-    <language>ko</language>
-    <lastBuildDate>Sat, 28 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%EC%9D%BC%EC%83%81/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[일상] 딩초 학부모</title>
-      <link>http://localhost:1313/logs/2026-03-28-first-grader/</link>
-      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/logs/2026-03-28-first-grader/</guid>
-      <description>&lt;p&gt;소파에 비스듬히 기대어 무릎 위에 놓고 흔들면서 재우던 갓난아이가 올해로 8살이 됐다. 나는 초딩의 &amp;lsquo;학부모님&amp;rsquo;이 됐다.&lt;/p&gt;
-&lt;p&gt;어제는 따님이 방과후 수업에서 마술을 배워서 깜짝 공연을 해줬다. 세상이 정말 빠르게 변하고 아이도 쑥쑥 자라는데, 나는 훌륭한 아버지로, 남편으로 자라고 있는지 항상 고민이 된다.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>일상 on 김태영</title><link>https://nullnull-kim.com/tags/%EC%9D%BC%EC%83%81/</link><description>Recent content in 일상 on 김태영</description><generator>Hugo</generator><language>ko</language><lastBuildDate>Sat, 28 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://nullnull-kim.com/tags/%EC%9D%BC%EC%83%81/index.xml" rel="self" type="application/rss+xml"/><item><title>[일상] 딩초 학부모</title><link>https://nullnull-kim.com/logs/2026-03-28-first-grader/</link><pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate><guid>https://nullnull-kim.com/logs/2026-03-28-first-grader/</guid><description>&lt;p&gt;소파에 비스듬히 기대어 무릎 위에 놓고 흔들면서 재우던 갓난아이가 올해로 8살이 됐다. 나는 초딩의 &amp;lsquo;학부모님&amp;rsquo;이 됐다.&lt;/p&gt;
+&lt;p&gt;어제는 따님이 방과후 수업에서 마술을 배워서 깜짝 공연을 해줬다. 세상이 정말 빠르게 변하고 아이도 쑥쑥 자라는데, 나는 훌륭한 아버지로, 남편으로 자라고 있는지 항상 고민이 된다.&lt;/p&gt;</description></item></channel></rss>
