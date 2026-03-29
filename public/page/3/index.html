@@ -1,38 +1,392 @@
-<!doctype html><html lang=en dir=auto data-theme=auto><head><meta name=generator content="Hugo 0.159.0"><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>김태영</title><meta name=description content><meta name=author content="김태영"><link rel=canonical href=https://nullnull-kim.nullnull-kim-fad.workers.dev/><link crossorigin=anonymous href=/assets/css/stylesheet.css rel="preload stylesheet" as=style><link rel=icon href=https://nullnull-kim.nullnull-kim-fad.workers.dev/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://nullnull-kim.nullnull-kim-fad.workers.dev/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://nullnull-kim.nullnull-kim-fad.workers.dev/favicon-32x32.png><link rel=apple-touch-icon href=https://nullnull-kim.nullnull-kim-fad.workers.dev/apple-touch-icon.png><link rel=mask-icon href=https://nullnull-kim.nullnull-kim-fad.workers.dev/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://nullnull-kim.nullnull-kim-fad.workers.dev/index.xml title=rss><link rel=alternate type=application/json href=https://nullnull-kim.nullnull-kim-fad.workers.dev/index.json title=json><link rel=alternate hreflang=en href=https://nullnull-kim.nullnull-kim-fad.workers.dev/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><script type=text/x-mathjax-config>
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.159.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>김태영</title>
+
+<meta name="description" content="">
+<meta name="author" content="김태영">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
         inlineMath: [['$','$'], ['\\(','\\)']],
         processEscapes: true
       }
     });
-  </script><script type=text/javascript async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><meta property="og:url" content="https://nullnull-kim.nullnull-kim-fad.workers.dev/"><meta property="og:site_name" content="김태영"><meta property="og:title" content="김태영"><meta property="og:locale" content="ko"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="김태영"><script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"김태영","url":"https://nullnull-kim.nullnull-kim-fad.workers.dev/","description":"","logo":"https://nullnull-kim.nullnull-kim-fad.workers.dev/favicon.ico","sameAs":["https://github.com/nullnull-kim"]}</script></head><body class=list id=top><header class=header><nav class=nav><div class=logo><a href=https://nullnull-kim.nullnull-kim-fad.workers.dev/ accesskey=h title="김태영 (Alt + H)">김태영</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
-<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://nullnull-kim.nullnull-kim-fad.workers.dev/daily/ title=Daily><span>Daily</span></a></li><li><a href=https://nullnull-kim.nullnull-kim-fad.workers.dev/study/ title=Study><span>Study</span></a></li><li><a href=https://nullnull-kim.nullnull-kim-fad.workers.dev/about/ title=About><span>About</span></a></li><li><a href=https://nullnull-kim.nullnull-kim-fad.workers.dev/archives/ title=Archive><span>Archive</span></a></li></ul></nav></header><main class=main><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>[LeetCode] Grind 75 questions (18/75) Reverse Linked List</h2></header><div class=entry-content><p>Grind75
+  </script>
+  <script type="text/javascript" async
+   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script><meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:site_name" content="김태영">
+  <meta property="og:title" content="김태영">
+  <meta property="og:locale" content="ko">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="김태영">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "김태영",
+  "url": "http://localhost:1313/",
+  "description": "",
+  "image": "http://localhost:1313/favicon.ico",
+  "sameAs": [
+      "https://github.com/nullnull-kim"
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="김태영 (Alt + H)">김태영</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/logs/" title="Logs">
+                    <span>Logs</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">[LeetCode] Grind 75 questions (25/75) Maximum Subarray
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Grind75
 문제로
-풀이 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 /** * Definition for singly-linked list. * public class ListNode { * int val; * ListNode next; * ListNode() {} * ListNode(int val) { this.val = val; } * ListNode(int val, ListNode next) { this.val = val; this.next = next; } * } */ class Solution { public ListNode reverseList(ListNode head) { ListNode prev = null; while(head != null) { ListNode next = head.next; head.next = prev; prev = head; head = next; } return prev; } }</p></div><footer class=entry-footer><span title='2024-07-11 00:00:00 +0000 UTC'>July 11, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer><a class=entry-link aria-label="post link to [LeetCode] Grind 75 questions (18/75) Reverse Linked List" href=https://nullnull-kim.nullnull-kim-fad.workers.dev/study/2024-07-11-leetcode-grind-75-questions-18/75-reverse-linked-list/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>[LeetCode] Grind 75 questions (19/75) Majority Element</h2></header><div class=entry-content><p>Grind75
+풀이2 1 2 3 4 5 6 7 8 9 10 11 12 13 class Solution { public int maxSubArray(int[] nums) { int maxCurrent = nums[0]; int maxGlobal = nums[0]; for(int i = 1; i &lt; nums.length; i&#43;&#43;) { maxCurrent = Math.max(nums[i], maxCurrent &#43; nums[i]); if(maxCurrent &gt; maxGlobal) maxGlobal = maxCurrent; } return maxGlobal; } } ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-14 00:00:00 +0000 UTC'>July 14, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer>
+  <a class="entry-link" aria-label="post link to [LeetCode] Grind 75 questions (25/75) Maximum Subarray" href="http://localhost:1313/logs/2024-07-14-leetcode-grind-75-questions-25/75-maximum-subarray/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">[LeetCode] Grind 75 questions (21/75) Diameter of Binary Tree
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Grind75
+문제로
+풀이 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 /** * Definition for a binary tree node. * public class TreeNode { * int val; * TreeNode left; * TreeNode right; * TreeNode() {} * TreeNode(int val) { this.val = val; } * TreeNode(int val, TreeNode left, TreeNode right) { * this.val = val; * this.left = left; * this.right = right; * } * } */ class Solution { private int diameter = 0; // 두 점을 연결하는 가장 긴 경로, 지름 public int diameterOfBinaryTree(TreeNode root) { getHeight(root); return diameter; } public int getHeight(TreeNode node) { if (node == null) return 0; int leftHeight = getHeight(node.left); int rightHeight = getHeight(node.right); // 노드를 통해 지나가는 경로의 길이 int pathThroughNode = leftHeight &#43; rightHeight; // 현재까지의 최대 직경 갱신 diameter = Math.max(diameter, pathThroughNode); // 현재 노드의 높이 반환 return Math.max(leftHeight, rightHeight) &#43; 1; } } </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-13 00:00:00 +0000 UTC'>July 13, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer>
+  <a class="entry-link" aria-label="post link to [LeetCode] Grind 75 questions (21/75) Diameter of Binary Tree" href="http://localhost:1313/logs/2024-07-13-leetcode-grind-75-questions-21/75-diameter-of-binary-tree/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">[LeetCode] Grind 75 questions (22/75) Middle of the Linked List
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Grind75
+문제로
+풀이 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 /** * Definition for singly-linked list. * public class ListNode { * int val; * ListNode next; * ListNode() {} * ListNode(int val) { this.val = val; } * ListNode(int val, ListNode next) { this.val = val; this.next = next; } * } */ class Solution { public ListNode middleNode(ListNode head) { ListNode slow = head; ListNode fast = head; while(fast != null &amp;&amp; fast.next != null) { slow = slow.next; fast = fast.next.next; } return slow; } } </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-13 00:00:00 +0000 UTC'>July 13, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer>
+  <a class="entry-link" aria-label="post link to [LeetCode] Grind 75 questions (22/75) Middle of the Linked List" href="http://localhost:1313/logs/2024-07-13-leetcode-grind-75-questions-22/75-middle-of-the-linked-list/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">[LeetCode] Grind 75 questions (23/75) Maximum Depth of Binary Tree
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Grind75
+문제로
+풀이 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 /** * Definition for a binary tree node. * public class TreeNode { * int val; * TreeNode left; * TreeNode right; * TreeNode() {} * TreeNode(int val) { this.val = val; } * TreeNode(int val, TreeNode left, TreeNode right) { * this.val = val; * this.left = left; * this.right = right; * } * } */ class Solution { public int maxDepth(TreeNode root) { if(root == null) return 0; return Math.max(maxDepth(root.left), maxDepth(root.right)) &#43; 1; } } </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-13 00:00:00 +0000 UTC'>July 13, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer>
+  <a class="entry-link" aria-label="post link to [LeetCode] Grind 75 questions (23/75) Maximum Depth of Binary Tree" href="http://localhost:1313/logs/2024-07-13-leetcode-grind-75-questions-23/75-maximum-depth-of-binary-tree/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">[LeetCode] Grind 75 questions (24/75) Contains Duplicate
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Grind75
+문제로
+풀이2 1 2 3 4 5 6 7 8 9 10 11 12 class Solution { public boolean containsDuplicate(int[] nums) { Map&lt;Integer, Integer&gt; numsMap = new HashMap(); for(int num : nums) { numsMap.put(num, numsMap.getOrDefault(num, 0) &#43; 1); if(numsMap.get(num) &gt; 1) return true; } return false; } } 풀이2 1 2 3 4 5 6 7 8 9 10 11 12 class Solution { public boolean containsDuplicate(int[] nums) { Set&lt;Integer&gt; numsSet = new HashSet(); for(int num : nums) { if(numsSet.add(num)) ; else return true; } return false; } } </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-13 00:00:00 +0000 UTC'>July 13, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer>
+  <a class="entry-link" aria-label="post link to [LeetCode] Grind 75 questions (24/75) Contains Duplicate" href="http://localhost:1313/logs/2024-07-13-leetcode-grind-75-questions-24/75-contains-duplicate/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">[LeetCode] Grind 75 questions (20/75) Add Binary
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Grind75
+문제로
+풀이 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 class Solution { public String addBinary(String a, String b) { StringBuilder result = new StringBuilder(); int sizeA = a.length() - 1; int sizeB = b.length() - 1; int carry = 0; while(sizeA &gt;= 0 || sizeB &gt;= 0) { int digitA = sizeA &gt;= 0 ? a.charAt(sizeA) - &#39;0&#39; : 0; int digitB = sizeB &gt;= 0 ? b.charAt(sizeB) - &#39;0&#39; : 0; int sum = digitA &#43; digitB &#43; carry; result.append(sum % 2); carry = sum / 2; sizeA--; sizeB--; } if(carry != 0) result.append(carry); return result.reverse().toString(); } } </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-12 00:00:00 +0000 UTC'>July 12, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer>
+  <a class="entry-link" aria-label="post link to [LeetCode] Grind 75 questions (20/75) Add Binary" href="http://localhost:1313/logs/2024-07-12-leetcode-grind-75-questions-20/75-add-binary/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">[LeetCode] Grind 75 questions (16/75) Climbing Stairs
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Grind75
+문제로
+풀이 시간 복잡도 $O(2^n)$
+1 2 3 4 5 6 7 8 class Solution { public int climbStairs(int n) { if (n &lt;= 1) { return 1; } return climbStairs(n - 1) &#43; climbStairs(n - 2); } } 풀이2 시간 복잡도 $O[n]$
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 class Solution { public int climbStairs(int n) { if (n &lt;= 1) return 1; int[] dp = new int[n&#43;1]; dp[0] = 1; dp[1] = 1; for(int i = 2; i &lt;= n; i&#43;&#43;) { dp[i] = dp[i-2] &#43; dp[i-1]; } return dp[n]; } } ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-11 00:00:00 +0000 UTC'>July 11, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer>
+  <a class="entry-link" aria-label="post link to [LeetCode] Grind 75 questions (16/75) Climbing Stairs" href="http://localhost:1313/logs/2024-07-11-leetcode-grind-75-questions-16/75-climbing-stairs/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">[LeetCode] Grind 75 questions (17/75) Longest Palindrome
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Grind75
+문제로
+풀이 시간 복잡도 $O(2^n)$
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 class Solution { public int longestPalindrome(String s) { Map&lt;Character, Integer&gt; map = new HashMap(); for(char c : s.toCharArray()) { map.put(c, map.getOrDefault(c, 0) &#43;1); } int result = 0; for(int i : map.values()) { if(i % 2 == 0) result = result &#43; i; else if(i-1 != 0 &amp;&amp; (i -1) % 2 == 0) result = result &#43; (i - 1); // ccc } for(int i : map.values()) { if(i % 2 == 1) return result &#43; 1; } return result; } } ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-11 00:00:00 +0000 UTC'>July 11, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer>
+  <a class="entry-link" aria-label="post link to [LeetCode] Grind 75 questions (17/75) Longest Palindrome" href="http://localhost:1313/logs/2024-07-11-leetcode-grind-75-questions-17/75-longest-palindrome/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">[LeetCode] Grind 75 questions (18/75) Reverse Linked List
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Grind75
+문제로
+풀이 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 /** * Definition for singly-linked list. * public class ListNode { * int val; * ListNode next; * ListNode() {} * ListNode(int val) { this.val = val; } * ListNode(int val, ListNode next) { this.val = val; this.next = next; } * } */ class Solution { public ListNode reverseList(ListNode head) { ListNode prev = null; while(head != null) { ListNode next = head.next; head.next = prev; prev = head; head = next; } return prev; } } </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-11 00:00:00 +0000 UTC'>July 11, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer>
+  <a class="entry-link" aria-label="post link to [LeetCode] Grind 75 questions (18/75) Reverse Linked List" href="http://localhost:1313/logs/2024-07-11-leetcode-grind-75-questions-18/75-reverse-linked-list/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">[LeetCode] Grind 75 questions (19/75) Majority Element
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Grind75
 문제로
 풀이 Boyer-Moore Voting Algorithm
 시간복잡도 $O(1)$
 공간복잡도 $O(n)$
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 class Solution { public int majorityElement(int[] nums) { int candidate = nums[0]; int count = 0; for(int num : nums) { if(count == 0) { candidate = num; } if(candidate == num) { count++; } else { count--; } } return candidate; } }</p></div><footer class=entry-footer><span title='2024-07-11 00:00:00 +0000 UTC'>July 11, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer><a class=entry-link aria-label="post link to [LeetCode] Grind 75 questions (19/75) Majority Element" href=https://nullnull-kim.nullnull-kim-fad.workers.dev/study/2024-07-11-leetcode-grind-75-questions-19/75-majority-element/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>[LeetCode] Grind 75 questions (14/75) First Bad Version</h2></header><div class=entry-content><p>Grind75
-문제로
-풀이 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 /* The isBadVersion API is defined in the parent class VersionControl. boolean isBadVersion(int version); */ public class Solution extends VersionControl { public int firstBadVersion(int n) { int left = 1; int right = n; while(left &lt; right) { int mid = left + (right - left) / 2; // 정수 오버플로를 방지하면서 중간값 계산 if(isBadVersion(mid)) right = mid; // mid가 불량이면 그 이전에도 불량이 있을 수 있으므로 right를 mid로 설정 else left = mid + 1; // mid가 불량이 아니라면 그 이후에 불량이 있으므로 left를 mid + 1로 설정 } return left; // left가 right와 같아지는 시점에 첫 번째 불량품을 찾는다. } }</p></div><footer class=entry-footer><span title='2024-07-10 00:00:00 +0000 UTC'>July 10, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer><a class=entry-link aria-label="post link to [LeetCode] Grind 75 questions (14/75) First Bad Version" href=https://nullnull-kim.nullnull-kim-fad.workers.dev/study/2024-07-10-leetcode-grind-75-questions-14/75-first-bad-version/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>[LeetCode] Grind 75 questions (15/75) Ransom Note</h2></header><div class=entry-content><p>Grind75
-문제로
-풀이 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 class Solution { public boolean canConstruct(String ransomNote, String magazine) { Map&lt;Character, Integer> magazineMap = new HashMap(); for(char c : magazine.toCharArray()) { magazineMap.put(c, magazineMap.getOrDefault(c, 0) + 1); } for(char c : ransomNote.toCharArray()) { magazineMap.put(c, magazineMap.getOrDefault(c, 0) - 1); } for(int i : magazineMap.values()) { if(i &lt; 0) return false; } return true; } } ...</p></div><footer class=entry-footer><span title='2024-07-10 00:00:00 +0000 UTC'>July 10, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer><a class=entry-link aria-label="post link to [LeetCode] Grind 75 questions (15/75) Ransom Note" href=https://nullnull-kim.nullnull-kim-fad.workers.dev/study/2024-07-10-leetcode-grind-75-questions-15/75-ransom-note/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>[LeetCode] Grind 75 questions (11/75) Balanced Binary Tree</h2></header><div class=entry-content><p>Grind75
-문제로
-풀이 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 /** * Definition for a binary tree node. * public class TreeNode { * int val; * TreeNode left; * TreeNode right; * TreeNode() {} * TreeNode(int val) { this.val = val; } * TreeNode(int val, TreeNode left, TreeNode right) { * this.val = val; * this.left = left; * this.right = right; * } * } */ class Solution { public boolean isBalanced(TreeNode root) { if(root == null) return true; if(Math.abs(getHeight(root.left) - getHeight(root.right)) > 1) return false; return isBalanced(root.left) && isBalanced(root.right); } private int getHeight(TreeNode node) { if(node == null) return 1; return Math.max(getHeight(node.left), getHeight(node.right)) + 1; } }</p></div><footer class=entry-footer><span title='2024-07-08 00:00:00 +0000 UTC'>July 8, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer><a class=entry-link aria-label="post link to [LeetCode] Grind 75 questions (11/75) Balanced Binary Tree" href=https://nullnull-kim.nullnull-kim-fad.workers.dev/study/2024-07-08-leetcode-grind-75-questions-11/75-balanced-binary-tree/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>[LeetCode] Grind 75 questions (12/75) Linked List Cycle</h2></header><div class=entry-content><p>Grind75
-문제로
-풀이 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 /** * Definition for singly-linked list. * class ListNode { * int val; * ListNode next; * ListNode(int x) { * val = x; * next = null; * } * } */ public class Solution { public boolean hasCycle(ListNode head) { if(head == null || head.next == null) return false; ListNode slow = head; ListNode fast = head.next; while(slow != fast) { if(fast == null || fast.next == null) return false; slow = slow.next; fast = fast.next.next; } return true; } } ...</p></div><footer class=entry-footer><span title='2024-07-08 00:00:00 +0000 UTC'>July 8, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer><a class=entry-link aria-label="post link to [LeetCode] Grind 75 questions (12/75) Linked List Cycle" href=https://nullnull-kim.nullnull-kim-fad.workers.dev/study/2024-07-08-leetcode-grind-75-questions-12/75-linked-list-cycle/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>[LeetCode] Grind 75 questions (13/75) Implement Queue using Stacks</h2></header><div class=entry-content><p>Grind75
-문제로
-풀이 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 class MyQueue { private Stack&lt;Integer> stack1; private Stack&lt;Integer> stack2; public MyQueue() { stack1 = new Stack&lt;>(); stack2 = new Stack&lt;>(); } public void push(int x) { stack1.push(x); } public int pop() { if (stack2.isEmpty()) { while (!stack1.isEmpty()) { stack2.push(stack1.pop()); } } return stack2.pop(); } public int peek() { if (stack2.isEmpty()) { while (!stack1.isEmpty()) { stack2.push(stack1.pop()); } } return stack2.peek(); } public boolean empty() { return stack1.isEmpty() && stack2.isEmpty(); } } /** * Your MyQueue object will be instantiated and called as such: * MyQueue obj = new MyQueue(); * obj.push(x); * int param_2 = obj.pop(); * int param_3 = obj.peek(); * boolean param_4 = obj.empty(); */ ...</p></div><footer class=entry-footer><span title='2024-07-08 00:00:00 +0000 UTC'>July 8, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer><a class=entry-link aria-label="post link to [LeetCode] Grind 75 questions (13/75) Implement Queue using Stacks" href=https://nullnull-kim.nullnull-kim-fad.workers.dev/study/2024-07-08-leetcode-grind-75-questions-13/75-implement-queue-using-stacks/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>[LeetCode] Grind 75 questions (10/75) Lowest Common Ancestor of a Binary Search Tree</h2></header><div class=entry-content><p>Grind75
-문제로
-풀이 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 /** * Definition for a binary tree node. * public class TreeNode { * int val; * TreeNode left; * TreeNode right; * TreeNode(int x) { val = x; } * } */ class Solution { public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) { if(root.val > p.val && root.val > q.val) { // root보다 값이 작을 경우 return lowestCommonAncestor(root.left, p, q); } else if(root.val &lt; p.val && root.val &lt; q.val) { // root보다 값이 클 경우 return lowestCommonAncestor(root.right, p, q); } else { // TreeNode p와 q가 같은 노드에 없다면 root가 부모다 return root; } } }</p></div><footer class=entry-footer><span title='2024-07-06 00:00:00 +0000 UTC'>July 6, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer><a class=entry-link aria-label="post link to [LeetCode] Grind 75 questions (10/75) Lowest Common Ancestor of a Binary Search Tree" href=https://nullnull-kim.nullnull-kim-fad.workers.dev/study/2024-07-06-leetcode-grind-75-questions-10/75-lowest-common-ancestor-of-a-binary-search-tree/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>[LeetCode] Grind 75 questions (7/75) Valid Anagram</h2></header><div class=entry-content><p>Grind75
-문제로
-풀이 1 2 3 4 5 6 7 8 9 10 11 class Solution { public boolean isAnagram(String s, String t) { char[] c1 = s.toCharArray(); char[] c2 = t.toCharArray(); Arrays.sort(c1); Arrays.sort(c2); return new String(c1).equals(new String(c2)); } } 풀이2 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 class Solution { public boolean isAnagram(String s, String t) { if (s.length() != t.length()) { return false; } Map&lt;Character, Integer> count = new HashMap&lt;>(); for(char c : s.toCharArray()) { count.put(c, count.getOrDefault(c, 0) + 1); } for(char c : t.toCharArray()) { count.put(c, count.getOrDefault(c, 0) -1); } for(int n : count.values()) { if(n != 0) return false; } return true; } }</p></div><footer class=entry-footer><span title='2024-07-02 00:00:00 +0000 UTC'>July 2, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer><a class=entry-link aria-label="post link to [LeetCode] Grind 75 questions (7/75) Valid Anagram" href=https://nullnull-kim.nullnull-kim-fad.workers.dev/study/2024-07-02-leetcode-grind-75-questions-7/75-valid-anagram/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>[LeetCode] Grind 75 questions (8/75) Binary Search</h2></header><div class=entry-content><p>Grind75
-문제로
-풀이 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 class Solution { public int search(int[] nums, int target) { int left = 0; int right = nums.length-1; while(left &lt;= right) { int mid = left + (right-left) / 2; if(nums[mid] == target) return mid; else if(nums[mid] > target) { right = mid - 1; } else { left = mid + 1; } } return -1; } }</p></div><footer class=entry-footer><span title='2024-07-02 00:00:00 +0000 UTC'>July 2, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer><a class=entry-link aria-label="post link to [LeetCode] Grind 75 questions (8/75) Binary Search" href=https://nullnull-kim.nullnull-kim-fad.workers.dev/study/2024-07-02-leetcode-grind-75-questions-8/75-binary-search/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://nullnull-kim.nullnull-kim-fad.workers.dev/page/2/>«&nbsp;이전 페이지&nbsp;
-</a><a class=next href=https://nullnull-kim.nullnull-kim-fad.workers.dev/page/4/>다음 페이지&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2026 <a href=https://nullnull-kim.nullnull-kim-fad.workers.dev/>김태영</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script></body></html>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 class Solution { public int majorityElement(int[] nums) { int candidate = nums[0]; int count = 0; for(int num : nums) { if(count == 0) { candidate = num; } if(candidate == num) { count&#43;&#43;; } else { count--; } } return candidate; } } </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-11 00:00:00 +0000 UTC'>July 11, 2024</span>&nbsp;·&nbsp;<span>김태영</span></footer>
+  <a class="entry-link" aria-label="post link to [LeetCode] Grind 75 questions (19/75) Majority Element" href="http://localhost:1313/logs/2024-07-11-leetcode-grind-75-questions-19/75-majority-element/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/page/2/">
+      «&nbsp;이전 페이지&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/page/4/">다음 페이지&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">김태영</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

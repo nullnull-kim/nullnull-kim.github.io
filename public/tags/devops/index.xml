@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Devops on 김태영</title>
+    <link>http://localhost:1313/tags/devops/</link>
+    <description>Recent content in Devops on 김태영</description>
+    <generator>Hugo</generator>
+    <language>ko</language>
+    <lastBuildDate>Sun, 29 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Claude] What Happens When You Run 5 Projects at Once — Building a Discord Alert System</title>
+      <link>http://localhost:1313/logs/2026-03-29-discord-alert-en/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/logs/2026-03-29-discord-alert-en/</guid>
+      <description>&lt;p&gt;I now have 5 projects. shop, blog, code_dungeon, good_game, and a root that manages them all (that&amp;rsquo;s not its actual name). Each project runs its own Claude session. The problem is there&amp;rsquo;s only one of me.&lt;/p&gt;
+&lt;p&gt;If I kick off a task in shop and switch to editing a draft in blog, I have no idea when shop finishes. If I start Phase 1 in code_dungeon and go check on good_game, code_dungeon might be stuck waiting for permission and I wouldn&amp;rsquo;t know. Staring at 5 terminals in rotation isn&amp;rsquo;t monitoring. It&amp;rsquo;s just eye strain.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[Claude] 프로젝트 5개를 동시에 돌리면 생기는 일 — Discord 알림 시스템 구축기</title>
+      <link>http://localhost:1313/logs/2026-03-29-discord-alert/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/logs/2026-03-29-discord-alert/</guid>
+      <description>&lt;p&gt;프로젝트가 5개가 됐다. shop, blog, code_dungeon, good_game, 그리고 전체를 관리하는 root.(프로젝트명이 root는 아니다) 각 프로젝트마다 Claude 세션이 돌아가는데 문제는 내가 하나밖에 없다는 거다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

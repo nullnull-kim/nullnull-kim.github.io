@@ -9,10 +9,11 @@ hasCJKLanguage = true
   pagerSize = 10
 
 [params]
+  env = "production"
   author = "김태영"
   [params.assets]
     disableFingerprinting = true
-  description = "필사적으로 행복해지자"
+  description = "개발자 김태영의 기술 블로그 — Claude 활용기, LeetCode 풀이, 일상 기록"
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = false
@@ -28,6 +29,10 @@ hasCJKLanguage = true
   [params.homeInfoParams]
     Title = "김태영"
     Content = "필사적으로 행복해지자"
+
+  [params.schema]
+    publisherType = "Person"
+    sameAs = ["https://github.com/nullnull-kim"]
 
   [[params.socialIcons]]
     name = "github"
