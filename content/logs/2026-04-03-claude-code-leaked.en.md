@@ -19,7 +19,7 @@ After reading the [harness engineering guide](https://wikidocs.net/blog/@jaehong
 
 I didn't have deep expertise since it's not my core work, but I built it anyway. I just needed to make something. (I'll fix it up soon.)
 
-## Come here and face an honorable death!
+## Come forth, you will find honor in death!
 
 Then I analyzed Claw Code and it hit me. I didn't read all 1,884 files, but everything I'd been painstakingly building with hooks and CLAUDE.md was already designed into the system. Permission management, tool routing, context handling — all of it.
 
